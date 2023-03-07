@@ -1,0 +1,1196 @@
+
+Downloading...
+From: https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t
+To: /mnt/azureml/cr/j/4d8eda8ff8ce4790a52fc2dcc2cd983d/exe/wd/Task05_Prostate.tar
+
+  0%|          | 0.00/240M [00:00<?, ?B/s]
+  2%|▏         | 4.72M/240M [00:00<00:11, 20.2MB/s]
+  7%|▋         | 17.3M/240M [00:00<00:04, 53.3MB/s]
+ 14%|█▍        | 34.1M/240M [00:00<00:02, 69.4MB/s]
+ 21%|██        | 50.9M/240M [00:00<00:02, 81.6MB/s]
+ 30%|██▉       | 71.8M/240M [00:00<00:01, 113MB/s] 
+ 35%|███▌      | 84.9M/240M [00:00<00:01, 106MB/s]
+ 40%|████      | 97.0M/240M [00:01<00:01, 97.3MB/s]
+ 49%|████▉     | 118M/240M [00:01<00:01, 116MB/s]  
+ 54%|█████▍    | 131M/240M [00:01<00:01, 107MB/s]
+ 59%|█████▉    | 142M/240M [00:01<00:00, 105MB/s]
+ 64%|██████▍   | 153M/240M [00:01<00:00, 97.5MB/s]
+ 69%|██████▉   | 166M/240M [00:01<00:00, 104MB/s] 
+ 74%|███████▎  | 177M/240M [00:02<00:00, 74.1MB/s]
+ 84%|████████▍ | 202M/240M [00:02<00:00, 90.9MB/s]
+ 91%|█████████ | 219M/240M [00:02<00:00, 98.6MB/s]
+ 98%|█████████▊| 235M/240M [00:02<00:00, 104MB/s] 
+100%|██████████| 240M/240M [00:02<00:00, 95.3MB/s]
+
+command1 executed
+CompletedProcess(args=['tar', '-xf', 'Task05_Prostate.tar', '-C', '/input/nnUNet_raw_data/'], returncode=0, stdout=b'')
+
+command2 executed
+CompletedProcess(args=['nnUNet_convert_decathlon_task', '-i', '/input/nnUNet_raw_data/Task05_Prostate', '-p', '4'], returncode=0, stdout=b'\n\nPlease cite the following paper when using nnUNet:\n\nIsensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z\n\n\nIf you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet\n\n')
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+
+command3 executed
+CompletedProcess(args=['nnUNet_plan_and_preprocess', '-t', '5', '--verify_dataset_integrity'], returncode=0, stdout=b'\n\nPlease cite the following paper when using nnUNet:\n\nIsensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z\n\n\nIf you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet\n\nVerifying training set\nchecking case prostate_16\nchecking case prostate_04\nchecking case prostate_32\nchecking case prostate_20\nchecking case prostate_43\nchecking case prostate_18\nchecking case prostate_06\nchecking case prostate_14\nchecking case prostate_41\nchecking case prostate_34\nchecking case prostate_38\nchecking case prostate_10\nchecking case prostate_02\nchecking case prostate_24\nchecking case prostate_47\nchecking case prostate_28\nchecking case prostate_00\nchecking case prostate_42\nchecking case prostate_21\nchecking case prostate_17\nchecking case prostate_40\nchecking case prostate_31\nchecking case prostate_07\nchecking case prostate_35\nchecking case prostate_44\nchecking case prostate_39\nchecking case prostate_01\nchecking case prostate_13\nchecking case prostate_46\nchecking case prostate_25\nchecking case prostate_29\nchecking case prostate_37\nVerifying label values\nExpected label values are [0, 1, 2]\nLabels OK\nVerifying test set\nDataset OK\nprostate_16\nprostate_04\nprostate_32\nprostate_20\nprostate_43\nprostate_18\nprostate_06\nprostate_14\nbefore crop: (2, 18, 256, 256) after crop: (2, 18, 256, 256) spacing: [4.   0.75 0.75] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] \n\nbefore crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [4.00000048 0.60000014 0.60000002] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_41\nbefore crop: (2, 18, 256, 256) after crop: (2, 18, 256, 256) spacing: [2.99999857 0.74999964 0.75      ] \n\nprostate_34\nprostate_38\nbefore crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [4.00000048 0.60000014 0.60000002] \n\nprostate_10\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_02\nprostate_24\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.59998989 0.625      0.625     ] \n\nprostate_47\nbefore crop: (2, 24, 320, 320) after crop: (2, 24, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999  0.62499988 0.62499988] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] \n\nprostate_28\nbefore crop: (2, 11, 384, 384) after crop: (2, 11, 383, 383) spacing: [3.99999809 0.60416669 0.60416698] \n\nprostate_00\nbefore crop: (2, 15, 320, 320) after crop: (2, 15, 320, 320) spacing: [4.00000238 0.60000032 0.60000002] \n\nprostate_42\nprostate_21\nbefore crop: (2, 22, 320, 320) after crop: (2, 22, 320, 319) spacing: [3.60000014 0.62500006 0.625     ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_17\nprostate_40\nprostate_31\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_07\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_35\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.59999871 0.625      0.62499982] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_44\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999  0.62499976 0.62499976] \n\nprostate_39\nprostate_01\nbefore crop: (2, 15, 320, 320) after crop: (2, 15, 320, 320) spacing: [3.99999809 0.59999973 0.60000002] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_13\nprostate_46\nprostate_25\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] \n\nprostate_29\nbefore crop: (2, 19, 320, 320) after crop: (2, 19, 320, 319) spacing: [3.5999999 0.625     0.625    ] \n\nbefore crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] \n\nbefore crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [3.99999809 0.59999973 0.60000002] \n\nprostate_37\nbefore crop: (2, 15, 256, 256) after crop: (2, 15, 256, 256) spacing: [4.00000048 0.75000012 0.75      ] \n\n\n\n\n Task005_Prostate\nnumber of threads:  (8, 8) \n\nnot using nonzero mask for normalization\nnot using nonzero mask for normalization\nAre we using the nonzero mask for normalizaion? OrderedDict([(0, False), (1, False)])\nthe median shape of the dataset is  [ 20. 320. 319.]\nthe max shape in the dataset is  [ 24.         370.23334551 370.23352814]\nthe min shape in the dataset is  [ 12.22221672 306.23986006 307.2       ]\nwe don\'t want feature maps smaller than  4  in the bottleneck\nthe transposed median shape of the dataset is  [ 20. 320. 319.]\ngenerating configuration for 3d_fullres\n{0: {\'batch_size\': 2, \'num_pool_per_axis\': [2, 6, 6], \'patch_size\': array([ 20, 320, 256]), \'median_patient_size_in_voxels\': array([ 20, 320, 319]), \'current_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'original_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'do_dummy_2D_data_aug\': True, \'pool_op_kernel_sizes\': [[1, 2, 2], [1, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2], [1, 2, 2]], \'conv_kernel_sizes\': [[1, 3, 3], [1, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}\ntranspose forward [0, 1, 2]\ntranspose backward [0, 1, 2]\nInitializing to run preprocessing\nnpz folder: /input/nnUNet_cropped_data/Task005_Prostate\noutput_folder: /preprocessed/Task005_Prostate\nseparate z, order in z is 0 order inplane is 3\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 24, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 24, 320, 319)} \n\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 10000\n1 5746\n2 5653\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_07.npz\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_02.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.59998989, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.59998989, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_01.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_10.npz\n1 10000\n21 8849\n 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_06.npz\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_13.npz\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 1\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 9701\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_14.npz\nbefore: {\'spacing\': array([4.00000048, 0.60000014, 0.60000002]), \'spacing_transposed\': array([4.00000048, 0.60000014, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 306, 307)} \n\nbefore: {\'spacing\': array([4.00000238, 0.60000032, 0.60000002]), \'spacing_transposed\': array([4.00000238, 0.60000032, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 307, 307)} \n\n1 8264\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_04.npz\n1 6313\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_16.npz\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_00.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_17.npz\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 9786\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_20.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999 , 0.62499988, 0.62499988]), \'spacing_transposed\': array([3.5999999 , 0.62499988, 0.62499988]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 5375\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_24.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 19, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 19, 320, 319)} \n\n1 5635\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_25.npz\n1separate z, order in z is 0 order inplane is 1\n 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_21.npz\nseparate z, order in z is 0 order inplane is 3\nbefore: {\'spacing\': array([4.  , 0.75, 0.75]), \'spacing_transposed\': array([4.  , 0.75, 0.75]), \'data.shape (data is transposed)\': (2, 18, 256, 256)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 307, 307)} \n\n1 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_18.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.59999871, 0.625     , 0.62499982]), \'spacing_transposed\': array([3.59999871, 0.625     , 0.62499982]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_31.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_32.npz\nseparate z, order in z is 0 order inplane is 1\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nseparate z, order in z is 0 order inplane is 3\n1 6849\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_35.npz\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nbefore: {\'spacing\': array([3.99999809, 0.60416669, 0.60416698]), \'spacing_transposed\': array([3.99999809, 0.60416669, 0.60416698]), \'data.shape (data is transposed)\': (2, 11, 383, 383)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 12, 370, 370)} \n\n1 8844\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_38.npz\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_28.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 8229\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_40.npz\nseparate z, order in z is 0 order inplane is 3\nbefore: {\'spacing\': array([3.99999809, 0.59999973, 0.60000002]), \'spacing_transposed\': array([3.99999809, 0.59999973, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 306, 307)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_29.npz\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 3\nseparate z, order in z is 0 order inplane is 1\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000014, 0.62500006, 0.625     ]), \'spacing_transposed\': array([3.60000014, 0.62500006, 0.625     ]), \'data.shape (data is transposed)\': (2, 22, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 22, 320, 319)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_42.npz\nseparate z, order in z is 0 order inplane is 1\nbefore: {\'spacing\': array([4.00000048, 0.75000012, 0.75      ]), \'spacing_transposed\': array([4.00000048, 0.75000012, 0.75      ]), \'data.shape (data is transposed)\': (2, 15, 256, 256)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 307, 307)} \n\n1 4218\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_37.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_43.npz\nbefore: {\'spacing\': array([4.00000048, 0.60000014, 0.60000002]), \'spacing_transposed\': array([4.00000048, 0.60000014, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 306, 307)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_34.npz\nbefore: {\'spacing\': array([3.99999809, 0.59999973, 0.60000002]), \'spacing_transposed\': array([3.99999809, 0.59999973, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 17, 307, 307)} \n\n1 5035\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_39.npz\nseparate z, order in z is 0 order inplane is 1\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999 , 0.62499976, 0.62499976]), \'spacing_transposed\': array([3.5999999 , 0.62499976, 0.62499976]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_44.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_46.npz\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_47.npz\nbefore: {\'spacing\': array([2.99999857, 0.74999964, 0.75      ]), \'spacing_transposed\': array([2.99999857, 0.74999964, 0.75      ]), \'data.shape (data is transposed)\': (2, 18, 256, 256)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 15, 307, 307)} \n\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_41.npz\nnot using nonzero mask for normalization\nnot using nonzero mask for normalization\nAre we using the nonzero maks for normalizaion? OrderedDict([(0, False), (1, False)])\nthe median shape of the dataset is  [ 20. 320. 319.]\nthe max shape in the dataset is  [ 24.         370.23334551 370.23352814]\nthe min shape in the dataset is  [ 12.22221672 306.23986006 307.2       ]\nwe don\'t want feature maps smaller than  4  in the bottleneck\nthe transposed median shape of the dataset is  [ 20. 320. 319.]\n[{\'batch_size\': 32, \'num_pool_per_axis\': [6, 6], \'patch_size\': array([320, 320]), \'median_patient_size_in_voxels\': array([ 20, 320, 319]), \'current_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'original_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'pool_op_kernel_sizes\': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], \'conv_kernel_sizes\': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], \'do_dummy_2D_data_aug\': False}]\nInitializing to run preprocessing\nnpz folder: /input/nnUNet_cropped_data/Task005_Prostate\noutput_folder: /preprocessed/Task005_Prostate\nseparate z, order in z is 0 order inplane is 3\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.59998989, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.59998989, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.59998989, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\nnormalization done\n1 10000\nno resampling necessary\nno resampling necessary\nbefore: 2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_10.npz\n{\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 24, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 24, 320, 319)} \n\nno resampling necessary\nno resampling necessarynormalization...\n\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\n1 5746\n2 5653\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_07.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...no resampling necessary\nno resampling necessary\nbefore:\n {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_02.npz\nnormalization done\n1 10000\nnormalization done2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_01.npz\n\nnormalization done\n11 10000\n2 8849\nseparate z, order in z is 0 order inplane is 1\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_06.npz\n 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_13.npz\nseparate z, order in z is 0 order inplane is 1\nbefore: {\'spacing\': array([4.00000048, 0.60000014, 0.60000002]), \'spacing_transposed\': array([4.00000048, 0.60000014, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([4.00000048, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 306, 307)} \n\nnormalization...\nnormalization done\n1 9781\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_04.npz\nbefore: {\'spacing\': array([4.00000238, 0.60000032, 0.60000002]), \'spacing_transposed\': array([4.00000238, 0.60000032, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 320, 320)} \nafter:  {\'spacing\': array([4.00000238, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 307, 307)} \n\nnormalization...\nnormalization done\n1 5358\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_00.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nnormalization done\n1 9701\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_14.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\n1 8264\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_16.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_17.npz\nseparate z, order in z isno resampling necessary\nno resampling necessary\nbefore:  0 order inplane is 3\n{\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\n1 9786\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_20.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_21.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999 , 0.62499988, 0.62499988]), \'spacing_transposed\': array([3.5999999 , 0.62499988, 0.62499988]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nnormalization done\n1 5375\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 19, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 19, 320, 319)} \n\nnormalization...\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_24.npz\nnormalization done\n1 5635\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_25.npz\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 3\nbefore: {\'spacing\': array([4.  , 0.75, 0.75]), \'spacing_transposed\': array([4.  , 0.75, 0.75]), \'data.shape (data is transposed)\': (2, 18, 256, 256)} \nafter:  {\'spacing\': array([4.   , 0.625, 0.625]), \'data.shape (data is resampled)\': (2, 18, 307, 307)} \n\nnormalization...\nseparate z, order in z is 0 order inplane is 3\nnormalization done\n1 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_18.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.59999871, 0.625     , 0.62499982]), \'spacing_transposed\': array([3.59999871, 0.625     , 0.62499982]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.59999871, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_31.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 3\nnormalization done\n1 10000\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_32.npz\nnormalization done\n1 6849\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_35.npz\nbefore: {\'spacing\': array([3.99999809, 0.59999973, 0.60000002]), \'spacing_transposed\': array([3.99999809, 0.59999973, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([3.99999809, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 306, 307)} \n\nnormalization...\nnormalization done\nseparate z, order in z is 0 order inplane is 3\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_29.npz\nbefore: {\'spacing\': array([3.99999809, 0.60416669, 0.60416698]), \'spacing_transposed\': array([3.99999809, 0.60416669, 0.60416698]), \'data.shape (data is transposed)\': (2, 11, 383, 383)} \nafter:  {\'spacing\': array([3.99999809, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 11, 370, 370)} \n\nnormalization...\nnormalization done\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_28.npz\nnormalization done\n1 8844\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_38.npz\nseparate z, order in z is 0 order inplane is 3\nseparate z, order in z is 0 order inplane is 1\nseparate z, order in z is 0 order inplane is 3\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nnormalization done\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000014, 0.62500006, 0.625     ]), \'spacing_transposed\': array([3.60000014, 0.62500006, 0.625     ]), \'data.shape (data is transposed)\': (2, 22, 320, 319)} \nafter:  {\'spacing\': array([3.60000014, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 22, 320, 319)} \n\nnormalization...\n1 8229\nseparate z, order in z is 0 order inplane is 1\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_40.npz\nnormalization done\nseparate z, order in z is 0 order inplane is 1\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_42.npz\nbefore: {\'spacing\': array([4.00000048, 0.60000014, 0.60000002]), \'spacing_transposed\': array([4.00000048, 0.60000014, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 319, 320)} \nafter:  {\'spacing\': array([4.00000048, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 306, 307)} \n\nnormalization...\nbefore: {\'spacing\': array([4.00000048, 0.75000012, 0.75      ]), \'spacing_transposed\': array([4.00000048, 0.75000012, 0.75      ]), \'data.shape (data is transposed)\': (2, 15, 256, 256)} \nafter:  {\'spacing\': array([4.00000048, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 307, 307)} \n\nnormalization...\nnormalization done\nnormalization done1 3946\n\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_37.npz\nbefore: {\'spacing\': array([3.99999809, 0.59999973, 0.60000002]), \'spacing_transposed\': array([3.99999809, 0.59999973, 0.60000002]), \'data.shape (data is transposed)\': (2, 15, 320, 320)} \nafter:  {\'spacing\': array([3.99999809, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 15, 307, 307)} \n\n1 10000\nnormalization...\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_34.npz\nnormalization done\n1 4596\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_39.npz\nseparate z, order in z is 0 order inplane is 1\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'spacing_transposed\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_43.npz\nbefore: {\'spacing\': array([2.99999857, 0.74999964, 0.75      ]), \'spacing_transposed\': array([2.99999857, 0.74999964, 0.75      ]), \'data.shape (data is transposed)\': (2, 18, 256, 256)} \nafter:  {\'spacing\': array([2.99999857, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 18, 307, 307)} \n\nnormalization...\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_41.npz\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.5999999 , 0.62499976, 0.62499976]), \'spacing_transposed\': array([3.5999999 , 0.62499976, 0.62499976]), \'data.shape (data is transposed)\': (2, 20, 320, 319)} \nafter:  {\'spacing\': array([3.5999999, 0.625    , 0.625    ]), \'data.shape (data is resampled)\': (2, 20, 320, 319)} \n\nnormalization...\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nno resampling necessary\nno resampling necessary\nbefore: {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'spacing_transposed\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is transposed)\': (2, 20, 320, 320)} \nafter:  {\'spacing\': array([3.60000992, 0.625     , 0.625     ]), \'data.shape (data is resampled)\': (2, 20, 320, 320)} \n\nnormalization...\nnormalization done\nnormalization done\n1 10000\nnormalization done\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_46.npz\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_44.npz\n1 10000\n2 10000\nsaving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_47.npz\n')
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+Verifying training set
+checking case prostate_16
+checking case prostate_04
+checking case prostate_32
+checking case prostate_20
+checking case prostate_43
+checking case prostate_18
+checking case prostate_06
+checking case prostate_14
+checking case prostate_41
+checking case prostate_34
+checking case prostate_38
+checking case prostate_10
+checking case prostate_02
+checking case prostate_24
+checking case prostate_47
+checking case prostate_28
+checking case prostate_00
+checking case prostate_42
+checking case prostate_21
+checking case prostate_17
+checking case prostate_40
+checking case prostate_31
+checking case prostate_07
+checking case prostate_35
+checking case prostate_44
+checking case prostate_39
+checking case prostate_01
+checking case prostate_13
+checking case prostate_46
+checking case prostate_25
+checking case prostate_29
+checking case prostate_37
+Verifying label values
+Expected label values are [0, 1, 2]
+Labels OK
+Verifying test set
+Dataset OK
+prostate_16
+prostate_04
+prostate_32
+prostate_20
+prostate_43
+prostate_18
+prostate_06
+prostate_14
+before crop: (2, 18, 256, 256) after crop: (2, 18, 256, 256) spacing: [4.   0.75 0.75] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] 
+
+before crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [4.00000048 0.60000014 0.60000002] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_41
+before crop: (2, 18, 256, 256) after crop: (2, 18, 256, 256) spacing: [2.99999857 0.74999964 0.75      ] 
+
+prostate_34
+prostate_38
+before crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [4.00000048 0.60000014 0.60000002] 
+
+prostate_10
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_02
+prostate_24
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.59998989 0.625      0.625     ] 
+
+prostate_47
+before crop: (2, 24, 320, 320) after crop: (2, 24, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999  0.62499988 0.62499988] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] 
+
+prostate_28
+before crop: (2, 11, 384, 384) after crop: (2, 11, 383, 383) spacing: [3.99999809 0.60416669 0.60416698] 
+
+prostate_00
+before crop: (2, 15, 320, 320) after crop: (2, 15, 320, 320) spacing: [4.00000238 0.60000032 0.60000002] 
+
+prostate_42
+prostate_21
+before crop: (2, 22, 320, 320) after crop: (2, 22, 320, 319) spacing: [3.60000014 0.62500006 0.625     ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_17
+prostate_40
+prostate_31
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_07
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_35
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.59999871 0.625      0.62499982] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_44
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 319) spacing: [3.5999999  0.62499976 0.62499976] 
+
+prostate_39
+prostate_01
+before crop: (2, 15, 320, 320) after crop: (2, 15, 320, 320) spacing: [3.99999809 0.59999973 0.60000002] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_13
+prostate_46
+prostate_25
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.5999999 0.625     0.625    ] 
+
+prostate_29
+before crop: (2, 19, 320, 320) after crop: (2, 19, 320, 319) spacing: [3.5999999 0.625     0.625    ] 
+
+before crop: (2, 20, 320, 320) after crop: (2, 20, 320, 320) spacing: [3.60000992 0.625      0.625     ] 
+
+before crop: (2, 15, 320, 320) after crop: (2, 15, 319, 320) spacing: [3.99999809 0.59999973 0.60000002] 
+
+prostate_37
+before crop: (2, 15, 256, 256) after crop: (2, 15, 256, 256) spacing: [4.00000048 0.75000012 0.75      ] 
+
+
+
+
+ Task005_Prostate
+number of threads:  (8, 8) 
+
+not using nonzero mask for normalization
+not using nonzero mask for normalization
+Are we using the nonzero mask for normalizaion? OrderedDict([(0, False), (1, False)])
+the median shape of the dataset is  [ 20. 320. 319.]
+the max shape in the dataset is  [ 24.         370.23334551 370.23352814]
+the min shape in the dataset is  [ 12.22221672 306.23986006 307.2       ]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [ 20. 320. 319.]
+generating configuration for 3d_fullres
+{0: {'batch_size': 2, 'num_pool_per_axis': [2, 6, 6], 'patch_size': array([ 20, 320, 256]), 'median_patient_size_in_voxels': array([ 20, 320, 319]), 'current_spacing': array([3.5999999, 0.625    , 0.625    ]), 'original_spacing': array([3.5999999, 0.625    , 0.625    ]), 'do_dummy_2D_data_aug': True, 'pool_op_kernel_sizes': [[1, 2, 2], [1, 2, 2], [2, 2, 2], [2, 2, 2], [1, 2, 2], [1, 2, 2]], 'conv_kernel_sizes': [[1, 3, 3], [1, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]}}
+transpose forward [0, 1, 2]
+transpose backward [0, 1, 2]
+Initializing to run preprocessing
+npz folder: /input/nnUNet_cropped_data/Task005_Prostate
+output_folder: /preprocessed/Task005_Prostate
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 24, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 24, 320, 319)} 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 10000
+1 5746
+2 5653
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_07.npz
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_02.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.59998989, 0.625     , 0.625     ]), 'spacing_transposed': array([3.59998989, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_01.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_10.npz
+1 10000
+21 8849
+ 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_06.npz
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_13.npz
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 1
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 9701
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_14.npz
+before: {'spacing': array([4.00000048, 0.60000014, 0.60000002]), 'spacing_transposed': array([4.00000048, 0.60000014, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 306, 307)} 
+
+before: {'spacing': array([4.00000238, 0.60000032, 0.60000002]), 'spacing_transposed': array([4.00000238, 0.60000032, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 307, 307)} 
+
+1 8264
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_04.npz
+1 6313
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_16.npz
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_00.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_17.npz
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 9786
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_20.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999 , 0.62499988, 0.62499988]), 'spacing_transposed': array([3.5999999 , 0.62499988, 0.62499988]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 5375
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_24.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 19, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 19, 320, 319)} 
+
+1 5635
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_25.npz
+1separate z, order in z is 0 order inplane is 1
+ 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_21.npz
+separate z, order in z is 0 order inplane is 3
+before: {'spacing': array([4.  , 0.75, 0.75]), 'spacing_transposed': array([4.  , 0.75, 0.75]), 'data.shape (data is transposed)': (2, 18, 256, 256)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 307, 307)} 
+
+1 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_18.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.59999871, 0.625     , 0.62499982]), 'spacing_transposed': array([3.59999871, 0.625     , 0.62499982]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_31.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_32.npz
+separate z, order in z is 0 order inplane is 1
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+separate z, order in z is 0 order inplane is 3
+1 6849
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_35.npz
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+before: {'spacing': array([3.99999809, 0.60416669, 0.60416698]), 'spacing_transposed': array([3.99999809, 0.60416669, 0.60416698]), 'data.shape (data is transposed)': (2, 11, 383, 383)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 12, 370, 370)} 
+
+1 8844
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_38.npz
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_28.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 8229
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_40.npz
+separate z, order in z is 0 order inplane is 3
+before: {'spacing': array([3.99999809, 0.59999973, 0.60000002]), 'spacing_transposed': array([3.99999809, 0.59999973, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 306, 307)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_29.npz
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000014, 0.62500006, 0.625     ]), 'spacing_transposed': array([3.60000014, 0.62500006, 0.625     ]), 'data.shape (data is transposed)': (2, 22, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 22, 320, 319)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_42.npz
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.00000048, 0.75000012, 0.75      ]), 'spacing_transposed': array([4.00000048, 0.75000012, 0.75      ]), 'data.shape (data is transposed)': (2, 15, 256, 256)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 307, 307)} 
+
+1 4218
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_37.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_43.npz
+before: {'spacing': array([4.00000048, 0.60000014, 0.60000002]), 'spacing_transposed': array([4.00000048, 0.60000014, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 306, 307)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_34.npz
+before: {'spacing': array([3.99999809, 0.59999973, 0.60000002]), 'spacing_transposed': array([3.99999809, 0.59999973, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 17, 307, 307)} 
+
+1 5035
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_39.npz
+separate z, order in z is 0 order inplane is 1
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999 , 0.62499976, 0.62499976]), 'spacing_transposed': array([3.5999999 , 0.62499976, 0.62499976]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_44.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_46.npz
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_47.npz
+before: {'spacing': array([2.99999857, 0.74999964, 0.75      ]), 'spacing_transposed': array([2.99999857, 0.74999964, 0.75      ]), 'data.shape (data is transposed)': (2, 18, 256, 256)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 15, 307, 307)} 
+
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_stage0/prostate_41.npz
+not using nonzero mask for normalization
+not using nonzero mask for normalization
+Are we using the nonzero maks for normalizaion? OrderedDict([(0, False), (1, False)])
+the median shape of the dataset is  [ 20. 320. 319.]
+the max shape in the dataset is  [ 24.         370.23334551 370.23352814]
+the min shape in the dataset is  [ 12.22221672 306.23986006 307.2       ]
+we don't want feature maps smaller than  4  in the bottleneck
+the transposed median shape of the dataset is  [ 20. 320. 319.]
+[{'batch_size': 32, 'num_pool_per_axis': [6, 6], 'patch_size': array([320, 320]), 'median_patient_size_in_voxels': array([ 20, 320, 319]), 'current_spacing': array([3.5999999, 0.625    , 0.625    ]), 'original_spacing': array([3.5999999, 0.625    , 0.625    ]), 'pool_op_kernel_sizes': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'do_dummy_2D_data_aug': False}]
+Initializing to run preprocessing
+npz folder: /input/nnUNet_cropped_data/Task005_Prostate
+output_folder: /preprocessed/Task005_Prostate
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.59998989, 0.625     , 0.625     ]), 'spacing_transposed': array([3.59998989, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.59998989, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+normalization done
+1 10000
+no resampling necessary
+no resampling necessary
+before: 2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_10.npz
+{'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 24, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 24, 320, 319)} 
+
+no resampling necessary
+no resampling necessarynormalization...
+
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+1 5746
+2 5653
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_07.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...no resampling necessary
+no resampling necessary
+before:
+ {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_02.npz
+normalization done
+1 10000
+normalization done2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_01.npz
+
+normalization done
+11 10000
+2 8849
+separate z, order in z is 0 order inplane is 1
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_06.npz
+ 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_13.npz
+separate z, order in z is 0 order inplane is 1
+before: {'spacing': array([4.00000048, 0.60000014, 0.60000002]), 'spacing_transposed': array([4.00000048, 0.60000014, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([4.00000048, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 306, 307)} 
+
+normalization...
+normalization done
+1 9781
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_04.npz
+before: {'spacing': array([4.00000238, 0.60000032, 0.60000002]), 'spacing_transposed': array([4.00000238, 0.60000032, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 320, 320)} 
+after:  {'spacing': array([4.00000238, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 307, 307)} 
+
+normalization...
+normalization done
+1 5358
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_00.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+normalization done
+1 9701
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_14.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+1 8264
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_16.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_17.npz
+separate z, order in z isno resampling necessary
+no resampling necessary
+before:  0 order inplane is 3
+{'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+1 9786
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_20.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_21.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999 , 0.62499988, 0.62499988]), 'spacing_transposed': array([3.5999999 , 0.62499988, 0.62499988]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+normalization done
+1 5375
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 19, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 19, 320, 319)} 
+
+normalization...
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_24.npz
+normalization done
+1 5635
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_25.npz
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 3
+before: {'spacing': array([4.  , 0.75, 0.75]), 'spacing_transposed': array([4.  , 0.75, 0.75]), 'data.shape (data is transposed)': (2, 18, 256, 256)} 
+after:  {'spacing': array([4.   , 0.625, 0.625]), 'data.shape (data is resampled)': (2, 18, 307, 307)} 
+
+normalization...
+separate z, order in z is 0 order inplane is 3
+normalization done
+1 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_18.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.59999871, 0.625     , 0.62499982]), 'spacing_transposed': array([3.59999871, 0.625     , 0.62499982]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.59999871, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_31.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 3
+normalization done
+1 10000
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_32.npz
+normalization done
+1 6849
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_35.npz
+before: {'spacing': array([3.99999809, 0.59999973, 0.60000002]), 'spacing_transposed': array([3.99999809, 0.59999973, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([3.99999809, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 306, 307)} 
+
+normalization...
+normalization done
+separate z, order in z is 0 order inplane is 3
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_29.npz
+before: {'spacing': array([3.99999809, 0.60416669, 0.60416698]), 'spacing_transposed': array([3.99999809, 0.60416669, 0.60416698]), 'data.shape (data is transposed)': (2, 11, 383, 383)} 
+after:  {'spacing': array([3.99999809, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 11, 370, 370)} 
+
+normalization...
+normalization done
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_28.npz
+normalization done
+1 8844
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_38.npz
+separate z, order in z is 0 order inplane is 3
+separate z, order in z is 0 order inplane is 1
+separate z, order in z is 0 order inplane is 3
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+normalization done
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000014, 0.62500006, 0.625     ]), 'spacing_transposed': array([3.60000014, 0.62500006, 0.625     ]), 'data.shape (data is transposed)': (2, 22, 320, 319)} 
+after:  {'spacing': array([3.60000014, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 22, 320, 319)} 
+
+normalization...
+1 8229
+separate z, order in z is 0 order inplane is 1
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_40.npz
+normalization done
+separate z, order in z is 0 order inplane is 1
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_42.npz
+before: {'spacing': array([4.00000048, 0.60000014, 0.60000002]), 'spacing_transposed': array([4.00000048, 0.60000014, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 319, 320)} 
+after:  {'spacing': array([4.00000048, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 306, 307)} 
+
+normalization...
+before: {'spacing': array([4.00000048, 0.75000012, 0.75      ]), 'spacing_transposed': array([4.00000048, 0.75000012, 0.75      ]), 'data.shape (data is transposed)': (2, 15, 256, 256)} 
+after:  {'spacing': array([4.00000048, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 307, 307)} 
+
+normalization...
+normalization done
+normalization done1 3946
+
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_37.npz
+before: {'spacing': array([3.99999809, 0.59999973, 0.60000002]), 'spacing_transposed': array([3.99999809, 0.59999973, 0.60000002]), 'data.shape (data is transposed)': (2, 15, 320, 320)} 
+after:  {'spacing': array([3.99999809, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 15, 307, 307)} 
+
+1 10000
+normalization...
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_34.npz
+normalization done
+1 4596
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_39.npz
+separate z, order in z is 0 order inplane is 1
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'spacing_transposed': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_43.npz
+before: {'spacing': array([2.99999857, 0.74999964, 0.75      ]), 'spacing_transposed': array([2.99999857, 0.74999964, 0.75      ]), 'data.shape (data is transposed)': (2, 18, 256, 256)} 
+after:  {'spacing': array([2.99999857, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 18, 307, 307)} 
+
+normalization...
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_41.npz
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.5999999 , 0.62499976, 0.62499976]), 'spacing_transposed': array([3.5999999 , 0.62499976, 0.62499976]), 'data.shape (data is transposed)': (2, 20, 320, 319)} 
+after:  {'spacing': array([3.5999999, 0.625    , 0.625    ]), 'data.shape (data is resampled)': (2, 20, 320, 319)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+no resampling necessary
+no resampling necessary
+before: {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'spacing_transposed': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is transposed)': (2, 20, 320, 320)} 
+after:  {'spacing': array([3.60000992, 0.625     , 0.625     ]), 'data.shape (data is resampled)': (2, 20, 320, 320)} 
+
+normalization...
+normalization done
+normalization done
+1 10000
+normalization done
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_46.npz
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_44.npz
+1 10000
+2 10000
+saving:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D_stage0/prostate_47.npz
+
+command4 executed with single thread
+CompletedProcess(args=['df', '-h'], returncode=0, stdout=b'Filesystem      Size  Used Avail Use% Mounted on\noverlay         334G   18G  300G   6% /\ntmpfs            64M     0   64M   0% /dev\ntmpfs            28G     0   28G   0% /sys/fs/cgroup\nshm              32G  148K   32G   1% /dev/shm\n/dev/sdb1       334G   18G  300G   6% /etc/hosts\ntmpfs            28G   12K   28G   1% /proc/driver/nvidia\n/dev/sda1       124G  2.9G  122G   3% /usr/bin/nvidia-smi\ntmpfs           5.6G  1.4M  5.6G   1% /run/nvidia-persistenced/socket\nudev             28G     0   28G   0% /dev/nvidia0\n')
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         334G   18G  300G   6% /
+tmpfs            64M     0   64M   0% /dev
+tmpfs            28G     0   28G   0% /sys/fs/cgroup
+shm              32G  148K   32G   1% /dev/shm
+/dev/sdb1       334G   18G  300G   6% /etc/hosts
+tmpfs            28G   12K   28G   1% /proc/driver/nvidia
+/dev/sda1       124G  2.9G  122G   3% /usr/bin/nvidia-smi
+tmpfs           5.6G  1.4M  5.6G   1% /run/nvidia-persistenced/socket
+udev             28G     0   28G   0% /dev/nvidia0
+
+command6 executed
+Traceback (most recent call last):
+  File "/opt/conda/bin/nnUNet_train", line 8, in <module>
+    sys.exit(main())
+  File "/opt/conda/lib/python3.7/site-packages/nnunet/run/run_training.py", line 179, in main
+    trainer.run_training()
+  File "/opt/conda/lib/python3.7/site-packages/nnunet/training/network_training/nnUNetTrainerV2.py", line 440, in run_training
+    ret = super().run_training()
+  File "/opt/conda/lib/python3.7/site-packages/nnunet/training/network_training/nnUNetTrainer.py", line 317, in run_training
+    super(nnUNetTrainer, self).run_training()
+  File "/opt/conda/lib/python3.7/site-packages/nnunet/training/network_training/network_trainer.py", line 427, in run_training
+    self.plot_network_architecture()
+  File "/opt/conda/lib/python3.7/site-packages/nnunet/training/network_training/nnUNetTrainer.py", line 295, in plot_network_architecture
+    torch.cuda.empty_cache()
+  File "/opt/conda/lib/python3.7/site-packages/torch/cuda/memory.py", line 121, in empty_cache
+    torch._C._cuda_emptyCache()
+RuntimeError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/batchgenerators/dataloading/multi_threaded_augmenter.py", line 92, in results_loop
+    raise RuntimeError("Abort event was set. So someone died and we should end this madness. \nIMPORTANT: "
+RuntimeError: Abort event was set. So someone died and we should end this madness. 
+IMPORTANT: This is not the actual error message! Look further up to see what caused the error. Please also check whether your RAM was full
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/batchgenerators/dataloading/multi_threaded_augmenter.py", line 92, in results_loop
+    raise RuntimeError("Abort event was set. So someone died and we should end this madness. \nIMPORTANT: "
+RuntimeError: Abort event was set. So someone died and we should end this madness. 
+IMPORTANT: This is not the actual error message! Look further up to see what caused the error. Please also check whether your RAM was full
+
+CompletedProcess(args=['nnUNet_train', '2d', 'nnUNetTrainerV2', 'Task005_Prostate', '0', '--npz'], returncode=1, stdout=b'\n\nPlease cite the following paper when using nnUNet:\n\nIsensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z\n\n\nIf you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet\n\n###############################################\nI am running the following nnUNet: 2d\nMy trainer class is:  <class \'nnunet.training.network_training.nnUNetTrainerV2.nnUNetTrainerV2\'>\nFor that I will be using the following configuration:\nnum_classes:  2\nmodalities:  {0: \'T2\', 1: \'ADC\'}\nuse_mask_for_norm OrderedDict([(0, False), (1, False)])\nkeep_only_largest_region None\nmin_region_size_per_class None\nmin_size_per_class None\nnormalization_schemes OrderedDict([(0, \'nonCT\'), (1, \'nonCT\')])\nstages...\n\nstage:  0\n{\'batch_size\': 32, \'num_pool_per_axis\': [6, 6], \'patch_size\': array([320, 320]), \'median_patient_size_in_voxels\': array([ 20, 320, 319]), \'current_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'original_spacing\': array([3.5999999, 0.625    , 0.625    ]), \'pool_op_kernel_sizes\': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], \'conv_kernel_sizes\': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], \'do_dummy_2D_data_aug\': False}\n\nI am using stage 0 from these plans\nI am using batch dice + CE loss\n\nI am using data from this folder:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D\n###############################################\nloading dataset\nloading all case properties\n2023-03-07 14:23:09.231073: Creating new 5-fold cross-validation split...\n2023-03-07 14:23:09.281159: Desired fold for training: 0\n2023-03-07 14:23:09.292146: This split has 25 training and 7 validation cases.\nunpacking dataset\ndone\n2023-03-07 14:23:11.657676: lr: 0.01\nusing pin_memory on device 0\nusing pin_memory on device 0\n2023-03-07 14:23:38.678550: Unable to plot network architecture:\n2023-03-07 14:23:38.733617: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR\nYou can try to repro this exception using the following code snippet. If that doesn\'t trigger the error, please include your original repro script when reporting this issue.\n\nimport torch\ntorch.backends.cuda.matmul.allow_tf32 = False\ntorch.backends.cudnn.benchmark = True\ntorch.backends.cudnn.deterministic = False\ntorch.backends.cudnn.allow_tf32 = True\ndata = torch.randn([1, 32, 320, 320], dtype=torch.float, device=\'cuda\', requires_grad=True)\nnet = torch.nn.Conv2d(32, 32, kernel_size=[3, 3], padding=[1, 1], stride=[1, 1], dilation=[1, 1], groups=1)\nnet = net.cuda().float()\nout = net(data)\nout.backward(torch.randn_like(out))\ntorch.cuda.synchronize()\n\nConvolutionParams \n    data_type = CUDNN_DATA_FLOAT\n    padding = [1, 1, 0]\n    stride = [1, 1, 0]\n    dilation = [1, 1, 0]\n    groups = 1\n    deterministic = false\n    allow_tf32 = true\ninput: TensorDescriptor 0x556f767b9ed0\n    type = CUDNN_DATA_FLOAT\n    nbDims = 4\n    dimA = 1, 32, 320, 320, \n    strideA = 3276800, 102400, 320, 1, \noutput: TensorDescriptor 0x556f729a0c40\n    type = CUDNN_DATA_FLOAT\n    nbDims = 4\n    dimA = 1, 32, 320, 320, \n    strideA = 3276800, 102400, 320, 1, \nweight: FilterDescriptor 0x556f761a9280\n    type = CUDNN_DATA_FLOAT\n    tensor_format = CUDNN_TENSOR_NCHW\n    nbDims = 4\n    dimA = 32, 32, 3, 3, \nPointer addresses: \n    input: 0x1115b60000\n    output: 0x11167e0000\n    weight: 0x1102101c00\n\n2023-03-07 14:23:38.756713: \nprinting the network instead:\n\n2023-03-07 14:23:38.773169: Generic_UNet(\n  (conv_blocks_localization): ModuleList(\n    (0): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(960, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n    (1): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(960, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n    (2): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n    (3): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n    (4): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n    (5): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n  )\n  (conv_blocks_context): ModuleList(\n    (0): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(2, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (1): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n          (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (2): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n          (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (3): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n          (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (4): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(256, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (5): StackedConvLayers(\n      (blocks): Sequential(\n        (0): ConvDropoutNormNonlin(\n          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n        (1): ConvDropoutNormNonlin(\n          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n        )\n      )\n    )\n    (6): Sequential(\n      (0): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n      (1): StackedConvLayers(\n        (blocks): Sequential(\n          (0): ConvDropoutNormNonlin(\n            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)\n            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)\n          )\n        )\n      )\n    )\n  )\n  (td): ModuleList()\n  (tu): ModuleList(\n    (0): ConvTranspose2d(480, 480, kernel_size=(2, 2), stride=(2, 2), bias=False)\n    (1): ConvTranspose2d(480, 480, kernel_size=(2, 2), stride=(2, 2), bias=False)\n    (2): ConvTranspose2d(480, 256, kernel_size=(2, 2), stride=(2, 2), bias=False)\n    (3): ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2), bias=False)\n    (4): ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2), bias=False)\n    (5): ConvTranspose2d(64, 32, kernel_size=(2, 2), stride=(2, 2), bias=False)\n  )\n  (seg_outputs): ModuleList(\n    (0): Conv2d(480, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n    (1): Conv2d(480, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n    (2): Conv2d(256, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n    (3): Conv2d(128, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n    (4): Conv2d(64, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n    (5): Conv2d(32, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)\n  )\n)\n2023-03-07 14:23:38.790361: \n\n')
+
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+###############################################
+I am running the following nnUNet: 2d
+My trainer class is:  <class 'nnunet.training.network_training.nnUNetTrainerV2.nnUNetTrainerV2'>
+For that I will be using the following configuration:
+num_classes:  2
+modalities:  {0: 'T2', 1: 'ADC'}
+use_mask_for_norm OrderedDict([(0, False), (1, False)])
+keep_only_largest_region None
+min_region_size_per_class None
+min_size_per_class None
+normalization_schemes OrderedDict([(0, 'nonCT'), (1, 'nonCT')])
+stages...
+
+stage:  0
+{'batch_size': 32, 'num_pool_per_axis': [6, 6], 'patch_size': array([320, 320]), 'median_patient_size_in_voxels': array([ 20, 320, 319]), 'current_spacing': array([3.5999999, 0.625    , 0.625    ]), 'original_spacing': array([3.5999999, 0.625    , 0.625    ]), 'pool_op_kernel_sizes': [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]], 'conv_kernel_sizes': [[3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3], [3, 3]], 'do_dummy_2D_data_aug': False}
+
+I am using stage 0 from these plans
+I am using batch dice + CE loss
+
+I am using data from this folder:  /preprocessed/Task005_Prostate/nnUNetData_plans_v2.1_2D
+###############################################
+loading dataset
+loading all case properties
+2023-03-07 14:23:09.231073: Creating new 5-fold cross-validation split...
+2023-03-07 14:23:09.281159: Desired fold for training: 0
+2023-03-07 14:23:09.292146: This split has 25 training and 7 validation cases.
+unpacking dataset
+done
+2023-03-07 14:23:11.657676: lr: 0.01
+using pin_memory on device 0
+using pin_memory on device 0
+2023-03-07 14:23:38.678550: Unable to plot network architecture:
+2023-03-07 14:23:38.733617: cuDNN error: CUDNN_STATUS_INTERNAL_ERROR
+You can try to repro this exception using the following code snippet. If that doesn't trigger the error, please include your original repro script when reporting this issue.
+
+import torch
+torch.backends.cuda.matmul.allow_tf32 = False
+torch.backends.cudnn.benchmark = True
+torch.backends.cudnn.deterministic = False
+torch.backends.cudnn.allow_tf32 = True
+data = torch.randn([1, 32, 320, 320], dtype=torch.float, device='cuda', requires_grad=True)
+net = torch.nn.Conv2d(32, 32, kernel_size=[3, 3], padding=[1, 1], stride=[1, 1], dilation=[1, 1], groups=1)
+net = net.cuda().float()
+out = net(data)
+out.backward(torch.randn_like(out))
+torch.cuda.synchronize()
+
+ConvolutionParams 
+    data_type = CUDNN_DATA_FLOAT
+    padding = [1, 1, 0]
+    stride = [1, 1, 0]
+    dilation = [1, 1, 0]
+    groups = 1
+    deterministic = false
+    allow_tf32 = true
+input: TensorDescriptor 0x556f767b9ed0
+    type = CUDNN_DATA_FLOAT
+    nbDims = 4
+    dimA = 1, 32, 320, 320, 
+    strideA = 3276800, 102400, 320, 1, 
+output: TensorDescriptor 0x556f729a0c40
+    type = CUDNN_DATA_FLOAT
+    nbDims = 4
+    dimA = 1, 32, 320, 320, 
+    strideA = 3276800, 102400, 320, 1, 
+weight: FilterDescriptor 0x556f761a9280
+    type = CUDNN_DATA_FLOAT
+    tensor_format = CUDNN_TENSOR_NCHW
+    nbDims = 4
+    dimA = 32, 32, 3, 3, 
+Pointer addresses: 
+    input: 0x1115b60000
+    output: 0x11167e0000
+    weight: 0x1102101c00
+
+2023-03-07 14:23:38.756713: 
+printing the network instead:
+
+2023-03-07 14:23:38.773169: Generic_UNet(
+  (conv_blocks_localization): ModuleList(
+    (0): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(960, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+    (1): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(960, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+    (2): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+    (3): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+    (4): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+    (5): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(64, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+  )
+  (conv_blocks_context): ModuleList(
+    (0): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(2, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (1): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(32, 64, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (2): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(64, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (3): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(128, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (4): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(256, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (5): StackedConvLayers(
+      (blocks): Sequential(
+        (0): ConvDropoutNormNonlin(
+          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+        (1): ConvDropoutNormNonlin(
+          (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+          (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+        )
+      )
+    )
+    (6): Sequential(
+      (0): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+      (1): StackedConvLayers(
+        (blocks): Sequential(
+          (0): ConvDropoutNormNonlin(
+            (conv): Conv2d(480, 480, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            (instnorm): InstanceNorm2d(480, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+            (lrelu): LeakyReLU(negative_slope=0.01, inplace=True)
+          )
+        )
+      )
+    )
+  )
+  (td): ModuleList()
+  (tu): ModuleList(
+    (0): ConvTranspose2d(480, 480, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (1): ConvTranspose2d(480, 480, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (2): ConvTranspose2d(480, 256, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (3): ConvTranspose2d(256, 128, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (4): ConvTranspose2d(128, 64, kernel_size=(2, 2), stride=(2, 2), bias=False)
+    (5): ConvTranspose2d(64, 32, kernel_size=(2, 2), stride=(2, 2), bias=False)
+  )
+  (seg_outputs): ModuleList(
+    (0): Conv2d(480, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (1): Conv2d(480, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (2): Conv2d(256, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (3): Conv2d(128, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (4): Conv2d(64, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+    (5): Conv2d(32, 3, kernel_size=(1, 1), stride=(1, 1), bias=False)
+  )
+)
+2023-03-07 14:23:38.790361: 
+
+
+command5 executed
+CompletedProcess(args=['df', '-h'], returncode=0, stdout=b'Filesystem      Size  Used Avail Use% Mounted on\noverlay         334G   18G  299G   6% /\ntmpfs            64M     0   64M   0% /dev\ntmpfs            28G     0   28G   0% /sys/fs/cgroup\nshm              32G  148K   32G   1% /dev/shm\n/dev/sdb1       334G   18G  299G   6% /etc/hosts\ntmpfs            28G   12K   28G   1% /proc/driver/nvidia\n/dev/sda1       124G  2.9G  122G   3% /usr/bin/nvidia-smi\ntmpfs           5.6G  1.4M  5.6G   1% /run/nvidia-persistenced/socket\nudev             28G     0   28G   0% /dev/nvidia0\n')
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         334G   18G  299G   6% /
+tmpfs            64M     0   64M   0% /dev
+tmpfs            28G     0   28G   0% /sys/fs/cgroup
+shm              32G  148K   32G   1% /dev/shm
+/dev/sdb1       334G   18G  299G   6% /etc/hosts
+tmpfs            28G   12K   28G   1% /proc/driver/nvidia
+/dev/sda1       124G  2.9G  122G   3% /usr/bin/nvidia-smi
+tmpfs           5.6G  1.4M  5.6G   1% /run/nvidia-persistenced/socket
+udev             28G     0   28G   0% /dev/nvidia0
+
+command7 executed
