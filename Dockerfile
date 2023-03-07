@@ -1,7 +1,12 @@
 FROM mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04
+#FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
+FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
+
 USER root
 
 EXPOSE 4321/tcp
+
+
 
 ENV TZ=America/Chicago \
     PYTHONUNBUFFERED=1 \
@@ -16,12 +21,20 @@ ENV TZ=America/Chicago \
     RESULTS_FOLDER="/output" \
     HDF5_USE_FILE_LOCKING=FALSE 
 
-WORKDIR /root
+WORKDIR /dev/sdb1  
 
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get dist-upgrade -y
+#RUN apt-get install cuda
+#RUN apt-get install cuda-drivers
+
+
+RUN pip install -U python-dateutil 
 RUN apt-get update -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
-RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
-RUN echo ${TZ} > /etc/timezone
+#RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
+#RUN echo ${TZ} > /etc/timezone
 RUN apt-get remove -y linux-libc-dev
 RUN apt-get install -y git curl libx11-6 ca-certificates
 RUN apt-get upgrade -y
@@ -29,7 +42,8 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /input /output /preprocessed
 
-RUN pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+RUN conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+#RUN apt-get install nvidia-cuda-toolkit
 
 RUN conda update -y conda
 RUN pip install -U pip
@@ -41,4 +55,13 @@ RUN pip install -U python-dateutil && \
     rm -rf $(python -m pip cache dir)
 
 RUN pip install matplotlib
+
+#RUN reboot
+
+WORKDIR /dev/sdb1  
+COPY . /dev/sdb1  
+
+ENV PATH /usr/local/cuda/bin:$PATH
+ENV LD_LIBRARY_PATH /usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
     
