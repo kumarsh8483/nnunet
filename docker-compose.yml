@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  nnunet_test:
+    container_name: nnunet_test
+    image: ip_scr/raystation_model_management/nnunet:1.0
+    network_mode: "host"
+    build:
+      context: .
+    volumes:
+      - ./src:/app/src
+      - ./models:/models
+      - /home/jwwood/nnunet_onnx:/output
+      - rsmm-dicom-db:/data/dicom
+      - ./nnUNet/nnunet:/opt/conda/lib/python3.7/site-packages/nnunet
+
+    working_dir: /app/src
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0,1,2,4,5
+      - MKL_SERVICE_FORCE_INTEL=1
+      - RESULTS_FOLDER=/models
+    entrypoint: ["/bin/bash"]
+
+volumes:
+  rsmm-dicom-db:
+    name: rsmm-dicom-db
+    external: true
