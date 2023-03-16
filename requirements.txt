@@ -1,0 +1,11 @@
+SimpleITK
+flask
+pydicom
+dcmrtstruct2nii
+nnunet
+kiwisolver
+graphviz
+fonttools
+cycler
+matplotlib
+git+https://github.com/FabianIsensee/hiddenlayer.git@more_plotted_details#egg=hiddenlayer
