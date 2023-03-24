@@ -9,10 +9,10 @@ ENV TZ=America/Chicago \
     NVIDIA_VISIBLE_DEVICES=all \
     NVIDIA_DRIVER_CAPABILITIES=compute,utility \
     nnUNet_n_proc_DA=32 \
-    nnUNet_raw_data_base="/input" \
+    nnUNet_raw="/input" \
     nnUNet_preprocessed="/preprocessed" \
     nnUNet_master_port=4321 \
-    RESULTS_FOLDER="/output" \
+    nnUNet_results="/output" \
     HDF5_USE_FILE_LOCKING=FALSE 
 
 WORKDIR /root
