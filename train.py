@@ -1,12 +1,23 @@
 # training python script : train.py
 import os
 import subprocess
-if __name__ == "__main__":
-  # prepare directories
-  nnUNet_raw_data_base=os.getenv('nnUNet_raw')
-  nnUNet_preprocessed=os.getenv('nnUNet_preprocessed')
-  RESULTS_FOLDER=os.getenv('nnUNet_results')
 
+nnUNet_raw_data_base=os.getenv('nnUNet_raw')
+nnUNet_preprocessed=os.getenv('nnUNet_preprocessed')
+RESULTS_FOLDER=os.getenv('nnUNet_results')
+
+class Command():
+    counter = 0
+
+    def init(self, *cmd):
+      self.cmd = cmd
+
+    def run(self):
+      result = subprocess.run(self.cmd, stdout=subprocess.PIPE)
+      print(f"Command {self.counter} execution : ", end="")
+      print(result.stdout.decode('ascii'))
+
+def create_dataset_dirs():
   try :
     os.makedirs(os.path.join(nnUNet_raw_data_base, 'nnUNet_raw_data'))
     os.makedirs(nnUNet_preprocessed)
@@ -14,39 +25,14 @@ if __name__ == "__main__":
   except FileExistsError:
     pass
 
-  print()
+if __name__ == "__main__":
+  # prepare data
+  create_dataset_dirs()
 
-  result1 = subprocess.run(['gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t'], stdout=subprocess.PIPE)
-  print(result1.stdout.decode('ascii'))
-  print("command1 executed")
+  Command('gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t').run()
+  Command('tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/").run()
+  Command('nnUNetv2_convert_MSD_dataset', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
+  Command('nnUNetv2_plan_and_preprocess', '-d', '5', '--verify_dataset_integrity').run()
 
-  #os.chdir(f"{nnUNet_raw_data_base}/nnUNet_raw_data/")
-  result2 = subprocess.run(['tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/"], stdout=subprocess.PIPE)
-  print(result2)
-  print(result2.stdout.decode('ascii'))
-  #os.chdir("../..")
-  print("command2 executed")
-
-  result3 = subprocess.run(['nnUNetv2_convert_MSD_dataset', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate'], stdout=subprocess.PIPE)
-  print(result3)
-  print(result3.stdout.decode('ascii'))
-  print("command3 executed")
-  result4 = subprocess.run(['nnUNetv2_plan_and_preprocess', '-d', '5', '--verify_dataset_integrity'], stdout=subprocess.PIPE)
-  print(result4)
-  print(result4.stdout.decode('ascii'))
-  print("command4 executed with single thread")
-
-  result6 = subprocess.run(["df", "-h"], stdout=subprocess.PIPE)
-  print(result6)
-  print(result6.stdout.decode('ascii'))
-  print("command6 executed")
-
-  result5 = subprocess.run(['nnUNetv2_train', '005', '2d', '0'], stdout=subprocess.PIPE)
-  print(result5)
-  print(result5.stdout.decode('ascii'))
-  print("command5 executed")
-
-  result7 = subprocess.run(["df", "-h"], stdout=subprocess.PIPE)
-  print(result7)
-  print(result7.stdout.decode('ascii'))
-  print("command7 executed")
+  # start training 
+  Command('nnUNetv2_train', '005', '2d', '0').run()
