@@ -35,7 +35,7 @@ RUN apt-get update -y && \
 
 RUN conda update -y conda && \
     python -m pip install -U pip && \
-    python -m pip install nnunet && \
+    python -m pip install nnunetv2 && \
     python -m pip install -U git+https://github.com/FabianIsensee/hiddenlayer.git@more_plotted_details#egg=hiddenlayer && \
     conda clean -ya && \
     rm -rf $(python -m pip cache dir)
