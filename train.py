@@ -17,6 +17,15 @@ class Command():
       print(f"Command {self.counter} execution : ", end="")
       print(result.stdout.decode('ascii'))
 
+def train():
+  # parameters :
+  dataset_id = "005"
+  train_type = "2d"
+  fold = "0"
+
+  Command('nnUNetv2_train', dataset_id, train_type, fold).run()
+
+
 def create_dataset_dirs():
   try :
     os.makedirs(os.path.join(nnUNet_raw_data_base, 'nnUNet_raw_data'))
@@ -34,5 +43,4 @@ if __name__ == "__main__":
   Command('nnUNetv2_convert_MSD_dataset', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
   Command('nnUNetv2_plan_and_preprocess', '-d', '5', '--verify_dataset_integrity').run()
 
-  # start training 
-  Command('nnUNetv2_train', '005', '2d', '0').run()
+  train()
