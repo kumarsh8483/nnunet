@@ -58,7 +58,8 @@ def get_trainer_from_args(dataset_name_or_id: Union[int, str],
                           trainer_name: str = 'nnUNetTrainer',
                           plans_identifier: str = 'nnUNetPlans',
                           use_compressed: bool = False,
-                          device: torch.device = torch.device('cuda')):
+                          device: torch.device = torch.device('cuda'),
+                          epochs: int = 1000):
     # load nnunet class and do sanity checks
     nnunet_trainer = recursive_find_python_class(join(nnunetv2.__path__[0], "training", "nnUNetTrainer"),
                                                 trainer_name, 'nnunetv2.training.nnUNetTrainer')
@@ -80,6 +81,16 @@ def get_trainer_from_args(dataset_name_or_id: Union[int, str],
             raise ValueError(f'dataset_name_or_id must either be an integer or a valid dataset name with the pattern '
                              f'DatasetXXX_YYY where XXX are the three(!) task ID digits. Your '
                              f'input: {dataset_name_or_id}')
+
+    # create custom nnunet trainer to specify training parameters
+    class Custom_nnUNetTrainer(type(nnunet_trainer)):
+        def __init__(self, plans_file, fold, output_folder=None, dataset_directory=None, batch_dice=True, stage=None,
+                 unpack_data=True, deterministic=True, fp16=False):
+          super().__init__(plans_file, fold, output_folder, dataset_directory, batch_dice, stage, unpack_data,
+                          deterministic, fp16)
+          self.max_num_epochs = epochs
+        
+
 
     # initialize nnunet trainer
     preprocessed_dataset_folder_base = join(nnUNet_preprocessed, maybe_convert_to_dataset_name(dataset_name_or_id))
@@ -130,7 +141,7 @@ def run_ddp(rank, dataset_name_or_id, configuration, fold, tr, p, use_compressed
     torch.cuda.set_device(torch.device('cuda', dist.get_rank()))
 
     nnunet_trainer = get_trainer_from_args(dataset_name_or_id, configuration, fold, tr, p,
-                                           use_compressed)
+                                           use_compressed, epochs)
 
     if disable_checkpointing:
         nnunet_trainer.disable_checkpointing = disable_checkpointing
@@ -161,9 +172,9 @@ def run_training(dataset_name_or_id: Union[str, int],
                  continue_training: bool = False,
                  only_run_validation: bool = False,
                  disable_checkpointing: bool = False,
-                 device: torch.device = torch.device('cuda')):
+                 device: torch.device = torch.device('cuda'),
+                 epochs: int = 1000):
     if isinstance(fold, str):
-        print("anan55 : ", fold)
         if fold != 'all':
             try:
                 fold = int(fold)
@@ -193,12 +204,13 @@ def run_training(dataset_name_or_id: Union[str, int],
                      only_run_validation,
                      pretrained_weights,
                      export_validation_probabilities,
-                     num_gpus),
+                     num_gpus,
+                     epochs),
                  nprocs=num_gpus,
                  join=True)
     else:
         nnunet_trainer = get_trainer_from_args(dataset_name_or_id, configuration, fold, trainer_class_name,
-                                               plans_identifier, use_compressed_data, device=device)
+                                               plans_identifier, use_compressed_data, device=device, epochs=epochs)
 
         if disable_checkpointing:
             nnunet_trainer.disable_checkpointing = disable_checkpointing
@@ -225,6 +237,8 @@ def run_training_entry():
     parser.add_argument('-configuration', type=str, default="2d", required=False,
                         help="Configuration that should be trained")
     parser.add_argument('-fold', type=str, default="all", required=False,
+                        help='Fold of the 5-fold cross-validation. Should be an int between 0 and 4.')
+    parser.add_argument('-epochs', type=str, default="10", required=False,
                         help='Fold of the 5-fold cross-validation. Should be an int between 0 and 4.')
     parser.add_argument('-tr', type=str, required=False, default='nnUNetTrainer',
                         help='[OPTIONAL] Use this flag to specify a custom trainer. Default: nnUNetTrainer')
@@ -273,7 +287,7 @@ def run_training_entry():
 
     run_training(args.dataset_name_or_id, args.configuration, args.fold, args.tr, args.p, args.pretrained_weights,
                  args.num_gpus, args.use_compressed, args.npz, args.c, args.val, args.disable_checkpointing,
-                 device=device)
+                 device=device, epochs=int(args.epochs))
 
 if __name__ == "__main__":
   # prepare data
