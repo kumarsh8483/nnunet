@@ -1,7 +1,9 @@
+# TODO : remove of input and output directories if request fails by utilizing hooks
+# TODO : load model from the init function in the future
+
 from azureml.contrib.services.aml_request import AMLRequest, rawhttp
 from azureml.contrib.services.aml_response import AMLResponse
 
-from io import BytesIO
 import os
 import shutil
 import uuid
@@ -11,14 +13,15 @@ import base64
 
 from nnunet.inference.predict import predict_from_folder
 from nnunet.paths import default_plans_identifier, default_cascade_trainer, default_trainer
+from nnunet.utilities.task_name_id_conversion import convert_id_to_task_name
 
-inputs_root = "inputs"
-outputs_root = "outputs"
-task_name = "Task005_Prostate" #default_plans_identifier
+inputs_root = "/var/azureml-app/avaj1870/inputs"
+outputs_root = "/var/azureml-app/avaj1870/outputs"
+task_name_cfg = "Task005_Prostate" #default_plans_identifier
 
 def make_prediction(input_folder, output_folder):
-    network_dir = "network_dir"
-    input_folder = "inputs"
+    task_name = task_name_cfg
+    network_dir = "nnunet_outputs/nnUNet"
     part_id = 0 # used when parallelization
     num_parts = 1 # used when parallelization
     folds = None # automatically detected if none
@@ -39,7 +42,6 @@ def make_prediction(input_folder, output_folder):
         trainer = cascade_trainer_class_name
     else:
         trainer = trainer_class_name
-
 
     if not task_name.startswith("Task"):
         task_id = int(task_name)
@@ -63,55 +65,61 @@ def make_prediction(input_folder, output_folder):
 
 def init():
     global model
+    print("/ : ", os.listdir("/"))
+    print("/var/azureml-app/avaj1870 : ", os.listdir("/var/azureml-app/avaj1870"))
+    print("/var/azureml-app/avaj1870/src : ", os.listdir("/var/azureml-app/avaj1870/src"))
     # TODO: model will be loaded from here in the future
     # create input and output folder for inferece
-    os.mkdir(inputs_dir)
-    os.mkdir(outputs_dir)
+
 
 # send files as a list in post request body
 # json format data
 @rawhttp
 def run(request):
-    print("run executed with raw data : ", request.get_data(False))
-  
+    # create unique input/output dirs for request 
+    # (uniqueness needed to prevent possible race conditons)
+    print("/ : ", os.listdir("/"))
+    print("/var/azureml-app/avaj1870 : ", os.listdir("/var/azureml-app/avaj1870"))
+    if not os.path.exists(inputs_root):
+        os.mkdir(inputs_root)
+    if not os.path.exists(outputs_root):
+        os.mkdir(outputs_root)
+
+    random_unique_id = str(uuid.uuid1())
+    print("[INFO] : random unique id for request = ", random_unique_id)
+    inputs_dir = os.path.join(inputs_root, random_unique_id)
+    outputs_dir = os.path.join(outputs_root, random_unique_id)
+
     if request.method == 'POST':
         # save request data as a file here
-        reqBody = request.get_data(False)
-
-        # create unique input/output dirs for request 
-        # (uniqueness needed to prevent possible race conditons)
-        random_unique_id = uuid.uuid1()
-        inputs_dir = os.path.join(inputs_root, random_unique_id)
-        outputs_dir = os.path.join(outputs_root, random_unique_id)
+        files = request.files
 
         os.mkdir(inputs_dir)
         os.mkdir(outputs_dir)
         
         # save files to inputs dir
-        for f in reqBody:
-            # filename will be determined according to nnunet repo
-            with open(os.path.join(inputs_dir, "dummy.txt, ""wb")) as outfile:
+        for f in files:
                 # Copy the BytesIO stream to the output file
-                outfile.write(BytesIO(bytes).getbuffer())
+                files[f].save(os.path.join(inputs_dir, f))
+
+        print("[INFO] Inputs dir content : ", os.listdir(inputs_dir))
 
         # make prediction  
         make_prediction(inputs_dir, outputs_dir)
 
-        # encode output files to base64 format
-        with open(os.path.join(outputs_dir, "plans.pkl"), "rb") as f:
-            plans_encoded = base64.b64encode(f.read())
+        print("[INFO] Outputs dir content : ", os.listdir(outputs_dir))
 
-        results_encoded = []
+        results_encoded = {}
         for fname in os.listdir(outputs_dir):
-            if fname != "plans.pkl":
-                with open(os.path.join(outputs_dir, fname), "rb") as f:
-                    results_encoded.append(base64.b64encode(f.read()))
+            with open(os.path.join(outputs_dir, fname), "rb") as f: 
+                results_encoded[fname] = base64.b64encode(f.read()).decode("utf-8")
 
         # clean inputs and outputs directories
         shutil.rmtree(inputs_dir)
-        shutil.rmtree(outputs_dir)
+        #shutil.rmtree(outputs_dir)
 
         # return results
-        return {'plans': plans_encoded, 'results':results_encoded}
+        print(results_encoded)
+        return {'result_files': results_encoded}
     else:
         return AMLResponse("Bad request, use POST", 500)
