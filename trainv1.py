@@ -1,8 +1,6 @@
 # training python script : train.py
 import os
 import subprocess
-import socket
-from typing import Union, Optional
 
 import argparse
 from batchgenerators.utilities.file_and_folder_operations import *
@@ -24,6 +22,7 @@ class Command():
 
     def __init__(self, *cmd):
       self.cmd = cmd
+      Command.counter+=1
 
     def run(self):
       result = subprocess.run(self.cmd, stdout=subprocess.PIPE)
@@ -204,12 +203,17 @@ def run_training():
 
 
 if __name__ == "__main__":
-  # prepare data
-  create_dataset_dirs()
+    # prepare data
+    create_dataset_dirs()
 
-  Command('gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t').run()
-  Command('tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/").run()
-  Command('nnUNet_convert_decathlon_task', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
-  Command('nnUNet_plan_and_preprocess', '-t', '5', '--verify_dataset_integrity').run()
+    Command('gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t').run()
+    Command('tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/").run()
+    Command('nnUNet_convert_decathlon_task', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
+    Command('nnUNet_plan_and_preprocess', '-t', '5', '--verify_dataset_integrity').run()
 
-  run_training()
+    run_training()
+
+    #print all files
+    for path, currentDirectory, files in os.walk("/"):
+        for file in files:
+            print(os.path.join(path, file))
