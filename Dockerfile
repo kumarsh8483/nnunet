@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04
-#FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
+FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
 FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 USER root
@@ -21,7 +21,7 @@ ENV TZ=America/Chicago \
     RESULTS_FOLDER="/output" \
     HDF5_USE_FILE_LOCKING=FALSE 
 
-WORKDIR /dev/sdb1  
+WORKDIR /root
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -30,7 +30,7 @@ RUN apt-get dist-upgrade -y
 #RUN apt-get install cuda-drivers
 
 
-RUN pip install -U python-dateutil 
+
 RUN apt-get update -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
 #RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime
@@ -42,8 +42,7 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 RUN mkdir -p /input /output /preprocessed
 
-RUN conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
-#RUN apt-get install nvidia-cuda-toolkit
+RUN conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
 
 RUN conda update -y conda
 RUN pip install -U pip
@@ -58,10 +57,10 @@ RUN pip install matplotlib
 
 #RUN reboot
 
-WORKDIR /dev/sdb1  
-COPY . /dev/sdb1  
+WORKDIR /app
+COPY . /app
 
 ENV PATH /usr/local/cuda/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/cuda/lib64:$LD_LIBRARY_PATH
 
-    
+CMD ["nvcc", "my_cuda_application.cu", "-o", "my_cuda_application"]

@@ -212,8 +212,3 @@ if __name__ == "__main__":
     Command('nnUNet_plan_and_preprocess', '-t', '5', '--verify_dataset_integrity').run()
 
     run_training()
-
-    #print all files
-    for path, currentDirectory, files in os.walk("/"):
-        for file in files:
-            print(os.path.join(path, file))
