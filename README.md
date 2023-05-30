@@ -6,15 +6,15 @@
     
         docker build -f dockerfile -t myimagename .
 
-    This command builds docker environment image using the file 'dockerfile' & name builded image as myimagename:latest, by looking into files at current directory (. on the end).
+    This command builds docker environment image using the file 'dockerfile' & name builded image as myimagename:latest, by looking into files at current directory (. on the end makes docker to use current directory as build context).
 
 2. Then, find the image name myimagename in the images tab of docker desktop.
    
-   
+   ![Alt text](assets/run-local-cpu.png?raw=true "Title")
 
 3. Go to additional settings and enter your train.py file path, in host path, container path is the same.
 
-    imge here
+    ![Alt text](assets/volume-mounting-local-cpu.png?raw=true "Title")
 
 4. Then, click run and it will direct you to containers tab, which will print running container output.
 
