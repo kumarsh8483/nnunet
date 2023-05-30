@@ -21,9 +21,9 @@
 
 Notes :
 
-* Whenever you change dockerfile, run step1 command.
+* Whenever you change dockerfile, run step 1 command.
   
-* After building once in step 1, you should start with step 2. Because train.py is moutned volume. Changes to train.py will be reflected when you rerun the image. No need to rebuild.
+* You should start with step 2 if you didn't change dockerfile but train.py. Because train.py is mounted volume. Changes to train.py will be reflected when you rerun the image. No need to rebuild.
    
         
     
