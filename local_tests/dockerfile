@@ -39,3 +39,6 @@ RUN conda update -y conda && \
     python -m pip install -U git+https://github.com/FabianIsensee/hiddenlayer.git@more_plotted_details#egg=hiddenlayer && \
     conda clean -ya && \
     rm -rf $(python -m pip cache dir)
+
+#remove this line for azure cpu deployments
+ENTRYPOINT [ "python3", "train.py" ]

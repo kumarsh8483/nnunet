@@ -16,6 +16,17 @@ from nnunetv2.utilities.dataset_name_id_conversion import maybe_convert_to_datas
 from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
 from torch.backends import cudnn
 
+if __name__ == "__main__":
+  # prepare data
+  create_dataset_dirs()
+
+  Command('gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t').run()
+  Command('tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/").run()
+  Command('nnUNetv2_convert_MSD_dataset', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
+  Command('nnUNetv2_plan_and_preprocess', '-d', '5', '--verify_dataset_integrity').run()
+
+  run_training_entry()
+
 
 nnUNet_raw_data_base=os.getenv('nnUNet_raw')
 nnUNet_preprocessed=os.getenv('nnUNet_preprocessed')
@@ -289,13 +300,4 @@ def run_training_entry():
                  args.num_gpus, args.use_compressed, args.npz, args.c, args.val, args.disable_checkpointing,
                  device=device, epochs=int(args.epochs))
 
-if __name__ == "__main__":
-  # prepare data
-  create_dataset_dirs()
 
-  Command('gdown', 'https://drive.google.com/uc?id=1vvgcavq_Za42T5YUVQZ2U6wgg4idq6Wy&confirm=t').run()
-  Command('tar', '-xf', "Task05_Prostate.tar", "-C", f"{nnUNet_raw_data_base}/nnUNet_raw_data/").run()
-  Command('nnUNetv2_convert_MSD_dataset', '-i', f'{nnUNet_raw_data_base}/nnUNet_raw_data/Task05_Prostate').run()
-  Command('nnUNetv2_plan_and_preprocess', '-d', '5', '--verify_dataset_integrity').run()
-
-  run_training_entry()
