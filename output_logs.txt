@@ -1,0 +1,373 @@
+Instance status:
+SystemSetup: Succeeded
+UserContainerImagePull: Succeeded
+ModelDownload: Succeeded
+UserContainerStart: Succeeded
+
+Container events:
+Kind: Pod, Name: Pulling, Type: Normal, Time: 2023-07-14T16:59:25.316288Z, Message: Start pulling container image
+Kind: Pod, Name: Downloading, Type: Normal, Time: 2023-07-14T16:59:25.48006Z, Message: Start downloading models
+Kind: Pod, Name: Pulled, Type: Normal, Time: 2023-07-14T17:03:56.963986Z, Message: Container image is pulled successfully
+Kind: Pod, Name: Downloaded, Type: Normal, Time: 2023-07-14T17:03:56.963986Z, Message: Models are downloaded successfully
+Kind: Pod, Name: Created, Type: Normal, Time: 2023-07-14T17:03:57.094793Z, Message: Created container inference-server
+Kind: Pod, Name: Started, Type: Normal, Time: 2023-07-14T17:03:57.205433Z, Message: Started container inference-server
+Kind: Pod, Name: ContainerReady, Type: Normal, Time: 2023-07-14T17:37:27.039193338Z, Message: Container is ready
+
+Container logs:
+2023-07-14T17:03:57,345942190+00:00 - rsyslog/run 
+2023-07-14T17:03:57,370721672+00:00 - gunicorn/run 
+2023-07-14T17:03:57,373403221+00:00 - nginx/run 
+2023-07-14T17:03:57,376810611+00:00 | gunicorn/run | 
+2023-07-14T17:03:57,382298217+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:03:57,387402102+00:00 | gunicorn/run | AzureML Container Runtime Information
+2023-07-14T17:03:57,394152278+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:03:57,398303910+00:00 | gunicorn/run | 
+2023-07-14T17:03:57,404229840+00:00 | gunicorn/run | 
+nginx: [warn] the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /etc/nginx/nginx.conf:1
+2023-07-14T17:03:57,411411741+00:00 | gunicorn/run | AzureML image information: minimal-ubuntu20.04-py38-cpu-inference:20230404.v14
+2023-07-14T17:03:57,415511169+00:00 | gunicorn/run | 
+2023-07-14T17:03:57,467540170+00:00 | gunicorn/run | 
+2023-07-14T17:03:57,470967061+00:00 | gunicorn/run | PATH environment variable: /opt/miniconda/envs/amlenv/bin:/opt/miniconda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-07-14T17:03:57,474280946+00:00 | gunicorn/run | PYTHONPATH environment variable: 
+2023-07-14T17:03:57,477549328+00:00 | gunicorn/run | 
+2023-07-14T17:04:04,465080299+00:00 | gunicorn/run | CONDAPATH environment variable: /opt/miniconda
+
+# conda environments:
+#
+base                     /opt/miniconda
+amlenv                   /opt/miniconda/envs/amlenv
+
+2023-07-14T17:04:08,475999799+00:00 | gunicorn/run | 
+2023-07-14T17:04:08,479046594+00:00 | gunicorn/run | Pip Dependencies (before dynamic installation)
+
+azure-core==1.26.3
+azure-identity==1.12.0
+azureml-inference-server-http==0.8.3
+batchgenerators==0.25
+cachetools==5.3.0
+certifi==2022.12.7
+cffi==1.15.1
+charset-normalizer==3.1.0
+click==8.1.3
+cmake==3.26.3
+contourpy==1.0.7
+cryptography==40.0.1
+cycler==0.11.0
+dicom2nifti==2.4.8
+filelock==3.11.0
+Flask==2.2.3
+Flask-Cors==3.0.10
+fonttools==4.39.3
+future==0.18.3
+google-api-core==2.11.0
+google-auth==2.17.1
+googleapis-common-protos==1.59.0
+gunicorn==20.1.0
+idna==3.4
+imageio==2.27.0
+importlib-metadata==6.1.0
+importlib-resources==5.12.0
+inference-schema==1.5.1
+itsdangerous==2.1.2
+Jinja2==3.1.2
+joblib==1.2.0
+kiwisolver==1.4.4
+lazy_loader==0.2
+linecache2==1.0.0
+lit==16.0.1
+MarkupSafe==2.1.2
+matplotlib==3.7.1
+MedPy==0.4.0
+mpmath==1.3.0
+msal==1.21.0
+msal-extensions==1.0.0
+networkx==3.1
+nibabel==5.1.0
+nnunet==1.7.1
+numpy==1.24.2
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cufft-cu11==10.9.0.58
+nvidia-curand-cu11==10.2.10.91
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-nccl-cu11==2.14.3
+nvidia-nvtx-cu11==11.7.91
+opencensus==0.11.2
+opencensus-context==0.1.3
+opencensus-ext-azure==1.1.9
+packaging==23.1
+pandas==2.0.0
+Pillow==9.5.0
+portalocker==2.7.0
+protobuf==4.22.1
+psutil==5.9.4
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser==2.21
+pydantic==1.10.7
+pydicom==2.3.1
+PyJWT==2.6.0
+pyparsing==3.0.9
+python-dateutil==2.8.2
+python-gdcm==3.0.21
+pytz==2023.3
+PyWavelets==1.4.1
+requests==2.28.2
+rsa==4.9
+scikit-image==0.20.0
+scikit-learn==1.2.2
+scipy==1.9.1
+SimpleITK==2.2.1
+six==1.16.0
+sympy==1.11.1
+threadpoolctl==3.1.0
+tifffile==2023.4.12
+torch==2.0.0
+tqdm==4.65.0
+traceback2==1.4.0
+triton==2.0.0
+typing_extensions==4.5.0
+tzdata==2023.3
+unittest2==1.1.0
+urllib3==1.26.15
+Werkzeug==2.2.3
+wrapt==1.12.1
+zipp==3.15.0
+
+2023-07-14T17:04:10,282214456+00:00 | gunicorn/run | 
+2023-07-14T17:04:10,284824533+00:00 | gunicorn/run | Entry script directory: /var/azureml-app/avaj1870/src/.
+2023-07-14T17:04:10,287636925+00:00 | gunicorn/run | 
+2023-07-14T17:04:10,290272504+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:10,292560059+00:00 | gunicorn/run | Dynamic Python Package Installation
+2023-07-14T17:04:10,295433655+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:10,297921124+00:00 | gunicorn/run | 
+2023-07-14T17:04:10,300595806+00:00 | gunicorn/run | Dynamic Python package installation is disabled.
+2023-07-14T17:04:10,303307291+00:00 | gunicorn/run | 
+2023-07-14T17:04:10,306186286+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:10,367814079+00:00 | gunicorn/run | Checking if the Python package azureml-inference-server-http is installed
+2023-07-14T17:04:10,372973230+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:10,376588776+00:00 | gunicorn/run | 
+2023-07-14T17:04:13,979613530+00:00 | gunicorn/run | 
+2023-07-14T17:04:13,983191245+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:13,986488842+00:00 | gunicorn/run | AzureML Inference Server
+2023-07-14T17:04:13,989858544+00:00 | gunicorn/run | ###############################################
+2023-07-14T17:04:13,992999633+00:00 | gunicorn/run | 
+2023-07-14T17:04:13,996829162+00:00 | gunicorn/run | Starting AzureML Inference Server HTTP.
+2023-07-14 17:04:15,585 I [12] azmlinfsrv - Loaded logging config from /opt/miniconda/envs/amlenv/lib/python3.8/site-packages/azureml_inference_server_http/logging.json
+2023-07-14 17:04:16,271 I [12] gunicorn.error - Starting gunicorn 20.1.0
+2023-07-14 17:04:16,272 I [12] gunicorn.error - Listening at: http://0.0.0.0:31311 (12)
+2023-07-14 17:04:16,273 I [12] gunicorn.error - Using worker: sync
+2023-07-14 17:04:16,280 I [70] gunicorn.error - Booting worker with pid: 70
+
+Azure ML Inferencing HTTP server v0.8.3
+
+
+Server Settings
+---------------
+Entry Script Name: /var/azureml-app/avaj1870/src/score.py
+Model Directory: /var/azureml-app/azureml-models/iamnewtestmodel/9
+Config File: None
+Worker Count: 1
+Worker Timeout (seconds): 300
+Server Port: 31311
+Application Insights Enabled: false
+Application Insights Key: None
+Inferencing HTTP server version: azmlinfsrv/0.8.3
+CORS for the specified origins: None
+
+
+Server Routes
+---------------
+Liveness Probe: GET   127.0.0.1:31311/
+Score:          POST  127.0.0.1:31311/score
+
+/opt/miniconda/envs/amlenv/lib/python3.8/site-packages/azureml_inference_server_http/server/config.py:51: FutureWarning: aliases are no longer used by BaseSettings to define which environment variables to read. Instead use the "env" field setting. See https://pydantic-docs.helpmanual.io/usage/settings/#environment-variable-names
+  class AMLInferenceServerConfig(pydantic.BaseSettings):
+2023-07-14 17:04:18,800 I [70] azmlinfsrv - AML_FLASK_ONE_COMPATIBILITY is set. Patched Flask to ensure compatibility with Flask 1.
+Initializing logger
+2023-07-14 17:04:18,803 I [70] azmlinfsrv - Starting up app insights client
+2023-07-14 17:04:18,868 I [70] azmlinfsrv.print - 
+
+Please cite the following paper when using nnUNet:
+
+Isensee, F., Jaeger, P.F., Kohl, S.A.A. et al. "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation." Nat Methods (2020). https://doi.org/10.1038/s41592-020-01008-z
+
+
+2023-07-14 17:04:18,869 I [70] azmlinfsrv.print - If you have questions or suggestions, feel free to open an issue at https://github.com/MIC-DKFZ/nnUNet
+
+2023-07-14 17:04:28,878 I [70] azmlinfsrv.print - nnUNet_raw_data_base is not defined and nnU-Net can only be used on data for which preprocessed files are already present on your system. nnU-Net cannot be used for experiment planning and preprocessing like this. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up properly.
+2023-07-14 17:04:28,879 I [70] azmlinfsrv.print - nnUNet_preprocessed is not defined and nnU-Net can not be used for preprocessing or training. If this is not intended, please read documentation/setting_up_paths.md for information on how to set this up.
+2023-07-14 17:04:28,879 I [70] azmlinfsrv.print - RESULTS_FOLDER is not defined and nnU-Net cannot be used for training or inference. If this is not intended behavior, please read documentation/setting_up_paths.md for information on how to set this up.
+2023-07-14 17:04:30,876 I [70] azmlinfsrv.user_script - Found user script at /var/azureml-app/avaj1870/src/score.py
+2023-07-14 17:04:30,877 I [70] azmlinfsrv.user_script - run() is decorated with @rawhttp. Server will invoke it with the flask request object.
+2023-07-14 17:04:30,878 I [70] azmlinfsrv.user_script - Invoking user's init function
+2023-07-14 17:04:30,878 I [70] azmlinfsrv.print - / :  ['sbin', 'tmp', 'home', 'usr', 'root', 'opt', 'srv', 'sys', 'var', 'etc', 'media', 'bin', 'run', 'mnt', 'boot', 'proc', 'lib', 'libx32', 'dev', 'lib64', 'lib32', 'IMAGE_INFORMATION', 'NOTICE.txt', 'LICENSE.txt']
+2023-07-14 17:04:30,879 I [70] azmlinfsrv.print - /var/azureml-app/avaj1870 :  ['inference-local.ipynb', 'docker', 'unnet-test.ipynb', 'build&push-docker.ipynb', '.amlignore', 'trainv1.ipynb', 'nnunet-online-inference-copy.ipynb', 'nnunet-online-inference.ipynb', 'src', 'modelfolder', 'dependencies']
+2023-07-14 17:04:30,879 I [70] azmlinfsrv.print - /var/azureml-app/avaj1870/src :  ['prepare.py', 'trainv1.py', 'score-mock.py', '.amlignore', 'score.py', 'train.py']
+2023-07-14 17:04:30,879 I [70] azmlinfsrv.user_script - Users's init has completed successfully
+2023-07-14 17:04:30,881 I [70] azmlinfsrv.swagger - Swaggers are prepared for the following versions: [2, 3, 3.1].
+2023-07-14 17:04:30,881 I [70] azmlinfsrv - Scoring timeout is set to 3600000
+2023-07-14 17:37:21,656 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:23,043 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:31,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:43,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:37:53,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:37:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:13,042 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:21,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:41,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:51,654 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:38:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:38:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:01,657 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:13,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:21,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:51,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:39:53,043 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:39:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:13,040 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:21,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:41,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:51,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:40:53,042 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:40:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:13,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:21,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:41:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:41:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:13,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:21,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:31,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:41,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:43,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:51,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:42:53,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:42:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:03,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:11,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:13,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:21,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:31,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:51,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:43:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:43:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:13,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:21,654 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:31,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:33,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:41,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:44:53,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:44:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:01,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:03,042 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:11,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:13,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:21,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:23,040 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:31,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:41,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:51,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:45:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:45:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:01,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:03,040 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:13,040 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:21,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:23,069 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:31,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:43,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:46:53,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:46:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:01,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:11,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:13,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:21,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:23,042 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:31,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:41,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:43,040 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:47:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:47:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:01,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:11,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:13,042 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:21,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:31,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:41,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:51,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:48:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:48:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:11,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:13,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:21,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:23,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:41,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:41 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:43,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:43 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:51,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:51 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:49:53,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:49:53 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:01,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:01 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:03,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:03 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:11,651 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:11 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:13,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:13 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:21,653 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:21 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:23,041 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:23 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:31,652 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:31 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
+2023-07-14 17:50:33,039 I [70] gunicorn.access - 127.0.0.1 - - [14/Jul/2023:17:50:33 +0000] "GET / HTTP/1.0" 200 7 "-" "kube-probe/1.18"
