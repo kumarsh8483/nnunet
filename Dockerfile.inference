@@ -1,0 +1,6 @@
+FROM mcr.microsoft.com/azureml/minimal-ubuntu20.04-py38-cpu-inference:latest
+
+RUN pip install nnunet
+#RUN pip install azureml-inference-server-http
+
+    
