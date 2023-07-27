@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04
 FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
-FROM pytorch/pytorch:1.10.0-cuda11.3-cudnn8-runtime
 
 USER root
 
