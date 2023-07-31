@@ -1,0 +1,413 @@
+edp-mlw-mlmm-tst-scentral-01
+databricks-workspace-rg1
+southcentralus
+dc3b2a9f-9106-4946-9d81-3f115060b468
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/debug.json
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/debug.json, 1 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/model_best.model.pkl
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/model_best.model.pkl, 2 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/model_final_checkpoint.model.pkl
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/model_final_checkpoint.model.pkl, 3 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/postprocessing.json
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/postprocessing.json, 4 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/progress.png
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/progress.png, 5 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/training_log_2023_7_4_10_48_05.txt
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/training_log_2023_7_4_10_48_05.txt, 6 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_00.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_00.nii.gz, 7 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_01.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_01.nii.gz, 8 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_02.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_02.nii.gz, 9 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_04.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_04.nii.gz, 10 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_06.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_06.nii.gz, 11 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_07.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_07.nii.gz, 12 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_10.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_10.nii.gz, 13 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_13.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_13.nii.gz, 14 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_14.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_14.nii.gz, 15 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_16.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_16.nii.gz, 16 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_17.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_17.nii.gz, 17 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_18.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_18.nii.gz, 18 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_20.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_20.nii.gz, 19 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_21.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_21.nii.gz, 20 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_24.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_24.nii.gz, 21 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_25.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_25.nii.gz, 22 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_28.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_28.nii.gz, 23 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_29.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_29.nii.gz, 24 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_31.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_31.nii.gz, 25 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_32.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_32.nii.gz, 26 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_34.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_34.nii.gz, 27 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_35.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_35.nii.gz, 28 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_37.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_37.nii.gz, 29 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_38.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_38.nii.gz, 30 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_39.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_39.nii.gz, 31 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_40.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_40.nii.gz, 32 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_41.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_41.nii.gz, 33 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_42.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_42.nii.gz, 34 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_43.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_43.nii.gz, 35 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_44.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_44.nii.gz, 36 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_46.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_46.nii.gz, 37 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_47.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/prostate_47.nii.gz, 38 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/summary.json
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/summary.json, 39 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/validation_args.json
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw/validation_args.json, 40 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_00.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_00.nii.gz, 41 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_01.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_01.nii.gz, 42 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_02.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_02.nii.gz, 43 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_04.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_04.nii.gz, 44 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_06.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_06.nii.gz, 45 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_07.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_07.nii.gz, 46 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_10.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_10.nii.gz, 47 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_13.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_13.nii.gz, 48 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_14.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_14.nii.gz, 49 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_16.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_16.nii.gz, 50 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_17.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_17.nii.gz, 51 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_18.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_18.nii.gz, 52 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_20.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_20.nii.gz, 53 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_21.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_21.nii.gz, 54 files out of an estimated total of 108
+Downloading dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_24.nii.gz
+Downloaded dataset/0148b05c-223c-4158-b7a5-e7a989a2f4cd/nnUNet/nnUNet/2d/Task005_Prostate/nnUNetTrainer__nnUNetPlansv2.1/all/validation_raw_postprocessed/prostate_24.nii.gz,…
+Show all (38.3 kB)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [28], in <cell line: 19>()
+     14 ds.download(target_path="./model_outputs", prefix=model_path, overwrite=True)
+     16 # register the model
+     17 
+     18 # model registration procedure
+---> 19 registered_model = Model.register(
+     20                 model_path=os.path.join(model_download_dir, model_path),
+     21                 model_name=model_name,
+     22                 workspace=workspace)
+
+TypeError: ABCMeta.register() got an unexpected keyword argument 'model_path'
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [35], in <cell line: 7>()
+      3 from azureml.core.webservice import AciWebservice
+      5 online_endpoint_name = "nnunet-model-07262240341385"
+      7 green_deployment = ManagedOnlineDeployment(
+      8     name="green",
+----> 9     environment = Environment(Image="edpcrmlmmtst01.azurecr.io/prediction_env"),
+     10     endpoint_name=online_endpoint_name,
+     11     #model=model,
+     12     model=registered_model,
+     13     instance_type = AciWebservice.deploy_configuration(cpu_cores=1,memory_gb=1),
+     14     #instance_type="Standard_DS2_v2", #"Standard_DS2_v2",
+     15     code_configuration=CodeConfiguration(code="", scoring_script="score.py"),
+     16     instance_count=1,
+     17     liveness_probe=ProbeSettings(
+     18         failure_threshold=30,
+     19         success_threshold=1,
+     20         timeout=2,
+     21         period=10,
+     22         initial_delay=2000,
+     23     ),
+     24     readiness_probe=ProbeSettings(
+     25         failure_threshold=10,
+     26         success_threshold=1,
+     27         timeout=10,
+     28         period=10,
+     29         initial_delay=2000,
+     30     ),
+     31 )
+
+TypeError: Environment.__init__() missing 1 required positional argument: 'name'
+Tips: You can try get_logs(): https://aka.ms/debugimage#dockerlog or local deployment: https://aka.ms/debugimage#debug-locally to debug if deployment takes longer than 10 minutes.
+FailedService deployment polling reached non-successful terminal state, current service state: Failed
+Operation ID: 9cf9363e-2063-49ac-a7ec-35c5467a74e3
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
+    },
+    {
+      "code": "AciDeploymentFailed",
+      "message": "Your container application crashed. Please follow the steps to debug:
+	1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.
+	2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.
+	3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	4. View the diagnostic events to check status of container, it may help you to debug the issue.
+"RestartCount": 3
+"CurrentState": {"state":"Waiting","startTime":null,"exitCode":null,"finishTime":null,"detailStatus":"CrashLoopBackOff: Back-off restarting failed"}
+"PreviousState": {"state":"Terminated","startTime":"2023-07-31T00:31:51.792Z","exitCode":111,"finishTime":"2023-07-31T00:32:16.75Z","detailStatus":"Error"}
+"Events":
+{"count":2,"firstTimestamp":"2023-07-28T17:20:16Z","lastTimestamp":"2023-07-28T17:24:16Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":2,"firstTimestamp":"2023-07-28T17:24:05Z","lastTimestamp":"2023-07-28T17:24:18Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1298,"firstTimestamp":"2023-07-28T17:25:54Z","lastTimestamp":"2023-07-31T00:27:37Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":1297,"firstTimestamp":"2023-07-28T17:26:44Z","lastTimestamp":"2023-07-31T00:21:13Z","name":"Killing","message":"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-28T18:39:42Z","lastTimestamp":"2023-07-28T18:39:42Z","name":"Failed","message":"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown","type":"Warning"}
+{"count":1,"firstTimestamp":"2023-07-31T00:20:44Z","lastTimestamp":"2023-07-31T00:20:44Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-31T00:23:45Z","lastTimestamp":"2023-07-31T00:23:45Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":4,"firstTimestamp":"2023-07-31T00:29:16Z","lastTimestamp":"2023-07-31T00:31:51Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":3,"firstTimestamp":"2023-07-31T00:29:52Z","lastTimestamp":"2023-07-31T00:31:16Z","name":"Killing","message":"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.","type":"Normal"}
+"
+    }
+  ]
+}
+
+---------------------------------------------------------------------------
+WebserviceException                       Traceback (most recent call last)
+Input In [37], in <cell line: 1>()
+----> 1 service.wait_for_deployment(show_output=True)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:918, in Webservice.wait_for_deployment(self, show_output, timeout_sec)
+    915         if not logs_response:
+    916             logs_response = 'Current sub-operation type not known, more logs unavailable.'
+--> 918         raise WebserviceException('Service deployment polling reached non-successful terminal state, current '
+    919                                   'service state: {}\n'
+    920                                   'Operation ID: {}\n'
+    921                                   '{}\n'
+    922                                   'Error:\n'
+    923                                   '{}'.format(self.state, self._operation_endpoint.split('/')[-1],
+    924                                               logs_response, format_error_response), logger=module_logger)
+    925     print('{} service creation operation finished, operation "{}"'.format(self._webservice_type,
+    926                                                                           operation_state))
+    927 except WebserviceException as e:
+
+WebserviceException: WebserviceException:
+	Message: Service deployment polling reached non-successful terminal state, current service state: Failed
+Operation ID: 9cf9363e-2063-49ac-a7ec-35c5467a74e3
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
+    },
+    {
+      "code": "AciDeploymentFailed",
+      "message": "Your container application crashed. Please follow the steps to debug:
+	1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.
+	2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.
+	3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	4. View the diagnostic events to check status of container, it may help you to debug the issue.
+"RestartCount": 3
+"CurrentState": {"state":"Waiting","startTime":null,"exitCode":null,"finishTime":null,"detailStatus":"CrashLoopBackOff: Back-off restarting failed"}
+"PreviousState": {"state":"Terminated","startTime":"2023-07-31T00:31:51.792Z","exitCode":111,"finishTime":"2023-07-31T00:32:16.75Z","detailStatus":"Error"}
+"Events":
+{"count":2,"firstTimestamp":"2023-07-28T17:20:16Z","lastTimestamp":"2023-07-28T17:24:16Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":2,"firstTimestamp":"2023-07-28T17:24:05Z","lastTimestamp":"2023-07-28T17:24:18Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1298,"firstTimestamp":"2023-07-28T17:25:54Z","lastTimestamp":"2023-07-31T00:27:37Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":1297,"firstTimestamp":"2023-07-28T17:26:44Z","lastTimestamp":"2023-07-31T00:21:13Z","name":"Killing","message":"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-28T18:39:42Z","lastTimestamp":"2023-07-28T18:39:42Z","name":"Failed","message":"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown","type":"Warning"}
+{"count":1,"firstTimestamp":"2023-07-31T00:20:44Z","lastTimestamp":"2023-07-31T00:20:44Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-31T00:23:45Z","lastTimestamp":"2023-07-31T00:23:45Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":4,"firstTimestamp":"2023-07-31T00:29:16Z","lastTimestamp":"2023-07-31T00:31:51Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":3,"firstTimestamp":"2023-07-31T00:29:52Z","lastTimestamp":"2023-07-31T00:31:16Z","name":"Killing","message":"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.","type":"Normal"}
+"
+    }
+  ]
+}
+	InnerException None
+	ErrorResponse 
+{
+    "error": {
+        "message": "Service deployment polling reached non-successful terminal state, current service state: Failed\nOperation ID: 9cf9363e-2063-49ac-a7ec-35c5467a74e3\nMore information can be found using '.get_logs()'\nError:\n{\n  \"code\": \"AciDeploymentFailed\",\n  \"statusCode\": 400,\n  \"message\": \"Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.\n\t1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.\n\t2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.\",\n  \"details\": [\n    {\n      \"code\": \"CrashLoopBackOff\",\n      \"message\": \"Your container application crashed. This may be caused by errors in your scoring file's init() function.\n\t1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.\n\t2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.\"\n    },\n    {\n      \"code\": \"AciDeploymentFailed\",\n      \"message\": \"Your container application crashed. Please follow the steps to debug:\n\t1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.\n\t2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.\n\t3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t4. View the diagnostic events to check status of container, it may help you to debug the issue.\n\"RestartCount\": 3\n\"CurrentState\": {\"state\":\"Waiting\",\"startTime\":null,\"exitCode\":null,\"finishTime\":null,\"detailStatus\":\"CrashLoopBackOff: Back-off restarting failed\"}\n\"PreviousState\": {\"state\":\"Terminated\",\"startTime\":\"2023-07-31T00:31:51.792Z\",\"exitCode\":111,\"finishTime\":\"2023-07-31T00:32:16.75Z\",\"detailStatus\":\"Error\"}\n\"Events\":\n{\"count\":2,\"firstTimestamp\":\"2023-07-28T17:20:16Z\",\"lastTimestamp\":\"2023-07-28T17:24:16Z\",\"name\":\"Pulling\",\"message\":\"pulling image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":2,\"firstTimestamp\":\"2023-07-28T17:24:05Z\",\"lastTimestamp\":\"2023-07-28T17:24:18Z\",\"name\":\"Pulled\",\"message\":\"Successfully pulled image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":1298,\"firstTimestamp\":\"2023-07-28T17:25:54Z\",\"lastTimestamp\":\"2023-07-31T00:27:37Z\",\"name\":\"Started\",\"message\":\"Started container\",\"type\":\"Normal\"}\n{\"count\":1297,\"firstTimestamp\":\"2023-07-28T17:26:44Z\",\"lastTimestamp\":\"2023-07-31T00:21:13Z\",\"name\":\"Killing\",\"message\":\"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.\",\"type\":\"Normal\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-28T18:39:42Z\",\"lastTimestamp\":\"2023-07-28T18:39:42Z\",\"name\":\"Failed\",\"message\":\"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown\",\"type\":\"Warning\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-31T00:20:44Z\",\"lastTimestamp\":\"2023-07-31T00:20:44Z\",\"name\":\"Pulling\",\"message\":\"pulling image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-31T00:23:45Z\",\"lastTimestamp\":\"2023-07-31T00:23:45Z\",\"name\":\"Pulled\",\"message\":\"Successfully pulled image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":4,\"firstTimestamp\":\"2023-07-31T00:29:16Z\",\"lastTimestamp\":\"2023-07-31T00:31:51Z\",\"name\":\"Started\",\"message\":\"Started container\",\"type\":\"Normal\"}\n{\"count\":3,\"firstTimestamp\":\"2023-07-31T00:29:52Z\",\"lastTimestamp\":\"2023-07-31T00:31:16Z\",\"name\":\"Killing\",\"message\":\"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.\",\"type\":\"Normal\"}\n\"\n    }\n  ]\n}"
+    }
+}
+/tmp/ipykernel_1402467/953589476.py:7: FutureWarning: azureml.core.model:
+To leverage new model deployment capabilities, AzureML recommends using CLI/SDK v2 to deploy models as online endpoint, 
+please refer to respective documentations 
+https://docs.microsoft.com/azure/machine-learning/how-to-deploy-managed-online-endpoints /
+https://docs.microsoft.com/azure/machine-learning/how-to-attach-kubernetes-anywhere 
+For more information on migration, see https://aka.ms/acimoemigration. 
+To disable CLI/SDK v1 deprecation warning set AZUREML_LOG_DEPRECATION_WARNING_ENABLED to 'False'
+  service = Model.deploy(
+Service deployment polling reached non-successful terminal state, current service state: Failed
+Operation ID: 6403badd-1369-495c-98a0-a3f9e898c470
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
+    },
+    {
+      "code": "AciDeploymentFailed",
+      "message": "Your container application crashed. Please follow the steps to debug:
+	1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.
+	2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.
+	3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	4. View the diagnostic events to check status of container, it may help you to debug the issue.
+"RestartCount": 3
+"CurrentState": {"state":"Waiting","startTime":null,"exitCode":null,"finishTime":null,"detailStatus":"CrashLoopBackOff: Back-off restarting failed"}
+"PreviousState": {"state":"Terminated","startTime":"2023-07-31T00:48:21.383Z","exitCode":111,"finishTime":"2023-07-31T00:48:46.276Z","detailStatus":"Error"}
+"Events":
+{"count":2,"firstTimestamp":"2023-07-28T17:20:16Z","lastTimestamp":"2023-07-28T17:24:16Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":2,"firstTimestamp":"2023-07-28T17:24:05Z","lastTimestamp":"2023-07-28T17:24:18Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1298,"firstTimestamp":"2023-07-28T17:25:54Z","lastTimestamp":"2023-07-31T00:27:37Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":1297,"firstTimestamp":"2023-07-28T17:26:44Z","lastTimestamp":"2023-07-31T00:21:13Z","name":"Killing","message":"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-28T18:39:42Z","lastTimestamp":"2023-07-28T18:39:42Z","name":"Failed","message":"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown","type":"Warning"}
+{"count":1,"firstTimestamp":"2023-07-31T00:20:44Z","lastTimestamp":"2023-07-31T00:20:44Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-31T00:23:45Z","lastTimestamp":"2023-07-31T00:23:45Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":8,"firstTimestamp":"2023-07-31T00:29:16Z","lastTimestamp":"2023-07-31T00:40:18Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":8,"firstTimestamp":"2023-07-31T00:29:52Z","lastTimestamp":"2023-07-31T00:40:41Z","name":"Killing","message":"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.","type":"Normal"}
+"
+    }
+  ]
+}
+
+Tips: You can try get_logs(): https://aka.ms/debugimage#dockerlog or local deployment: https://aka.ms/debugimage#debug-locally to debug if deployment takes longer than 10 minutes.
+Running
+2023-07-31 00:42:34+00:00 Registering the environment.
+2023-07-31 00:42:35+00:00 Use the existing image.
+2023-07-31 00:42:35+00:00 Generating deployment configuration..
+2023-07-31 00:42:43+00:00 Submitting deployment to compute..
+2023-07-31 00:42:45+00:00 Checking the status of deployment my-service..
+2023-07-31 00:46:41+00:00 Checking the status of inference endpoint my-service.
+Failed
+---------------------------------------------------------------------------
+WebserviceException                       Traceback (most recent call last)
+Input In [38], in <cell line: 15>()
+      6 #Deloy the service
+      7 service = Model.deploy(
+      8         workspace=workspace,
+      9         name=service_name,
+   (...)
+     13         overwrite=True
+     14     )
+---> 15 service.wait_for_deployment(show_output=True)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:918, in Webservice.wait_for_deployment(self, show_output, timeout_sec)
+    915         if not logs_response:
+    916             logs_response = 'Current sub-operation type not known, more logs unavailable.'
+--> 918         raise WebserviceException('Service deployment polling reached non-successful terminal state, current '
+    919                                   'service state: {}\n'
+    920                                   'Operation ID: {}\n'
+    921                                   '{}\n'
+    922                                   'Error:\n'
+    923                                   '{}'.format(self.state, self._operation_endpoint.split('/')[-1],
+    924                                               logs_response, format_error_response), logger=module_logger)
+    925     print('{} service creation operation finished, operation "{}"'.format(self._webservice_type,
+    926                                                                           operation_state))
+    927 except WebserviceException as e:
+
+WebserviceException: WebserviceException:
+	Message: Service deployment polling reached non-successful terminal state, current service state: Failed
+Operation ID: 6403badd-1369-495c-98a0-a3f9e898c470
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Your container application crashed. This may be caused by errors in your scoring file's init() function.
+	1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.
+	2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information."
+    },
+    {
+      "code": "AciDeploymentFailed",
+      "message": "Your container application crashed. Please follow the steps to debug:
+	1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.
+	2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.
+	3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.
+	4. View the diagnostic events to check status of container, it may help you to debug the issue.
+"RestartCount": 3
+"CurrentState": {"state":"Waiting","startTime":null,"exitCode":null,"finishTime":null,"detailStatus":"CrashLoopBackOff: Back-off restarting failed"}
+"PreviousState": {"state":"Terminated","startTime":"2023-07-31T00:48:21.383Z","exitCode":111,"finishTime":"2023-07-31T00:48:46.276Z","detailStatus":"Error"}
+"Events":
+{"count":2,"firstTimestamp":"2023-07-28T17:20:16Z","lastTimestamp":"2023-07-28T17:24:16Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":2,"firstTimestamp":"2023-07-28T17:24:05Z","lastTimestamp":"2023-07-28T17:24:18Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1298,"firstTimestamp":"2023-07-28T17:25:54Z","lastTimestamp":"2023-07-31T00:27:37Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":1297,"firstTimestamp":"2023-07-28T17:26:44Z","lastTimestamp":"2023-07-31T00:21:13Z","name":"Killing","message":"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-28T18:39:42Z","lastTimestamp":"2023-07-28T18:39:42Z","name":"Failed","message":"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown","type":"Warning"}
+{"count":1,"firstTimestamp":"2023-07-31T00:20:44Z","lastTimestamp":"2023-07-31T00:20:44Z","name":"Pulling","message":"pulling image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":1,"firstTimestamp":"2023-07-31T00:23:45Z","lastTimestamp":"2023-07-31T00:23:45Z","name":"Pulled","message":"Successfully pulled image "edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9"","type":"Normal"}
+{"count":8,"firstTimestamp":"2023-07-31T00:29:16Z","lastTimestamp":"2023-07-31T00:40:18Z","name":"Started","message":"Started container","type":"Normal"}
+{"count":8,"firstTimestamp":"2023-07-31T00:29:52Z","lastTimestamp":"2023-07-31T00:40:41Z","name":"Killing","message":"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.","type":"Normal"}
+"
+    }
+  ]
+}
+	InnerException None
+	ErrorResponse 
+{
+    "error": {
+        "message": "Service deployment polling reached non-successful terminal state, current service state: Failed\nOperation ID: 6403badd-1369-495c-98a0-a3f9e898c470\nMore information can be found using '.get_logs()'\nError:\n{\n  \"code\": \"AciDeploymentFailed\",\n  \"statusCode\": 400,\n  \"message\": \"Aci Deployment failed with exception: Your container application crashed. This may be caused by errors in your scoring file's init() function.\n\t1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.\n\t2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.\",\n  \"details\": [\n    {\n      \"code\": \"CrashLoopBackOff\",\n      \"message\": \"Your container application crashed. This may be caused by errors in your scoring file's init() function.\n\t1. Please check the logs for your container instance: my-service. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs.\n\t2. You can interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t3. You can also try to run image edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f locally. Please refer to https://aka.ms/debugimage#service-launch-fails for more information.\"\n    },\n    {\n      \"code\": \"AciDeploymentFailed\",\n      \"message\": \"Your container application crashed. Please follow the steps to debug:\n\t1. From the AML SDK, you can run print(service.get_logs()) if you have service object to fetch the logs. Please refer to https://aka.ms/debugimage#dockerlog for more information.\n\t2. If your container application crashed. This may be caused by errors in your scoring file's init() function. You can try debugging locally first. Please refer to https://aka.ms/debugimage#debug-locally for more information.\n\t3. You can also interactively debug your scoring file locally. Please refer to https://docs.microsoft.com/azure/machine-learning/how-to-debug-visual-studio-code#debug-and-troubleshoot-deployments for more information.\n\t4. View the diagnostic events to check status of container, it may help you to debug the issue.\n\"RestartCount\": 3\n\"CurrentState\": {\"state\":\"Waiting\",\"startTime\":null,\"exitCode\":null,\"finishTime\":null,\"detailStatus\":\"CrashLoopBackOff: Back-off restarting failed\"}\n\"PreviousState\": {\"state\":\"Terminated\",\"startTime\":\"2023-07-31T00:48:21.383Z\",\"exitCode\":111,\"finishTime\":\"2023-07-31T00:48:46.276Z\",\"detailStatus\":\"Error\"}\n\"Events\":\n{\"count\":2,\"firstTimestamp\":\"2023-07-28T17:20:16Z\",\"lastTimestamp\":\"2023-07-28T17:24:16Z\",\"name\":\"Pulling\",\"message\":\"pulling image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":2,\"firstTimestamp\":\"2023-07-28T17:24:05Z\",\"lastTimestamp\":\"2023-07-28T17:24:18Z\",\"name\":\"Pulled\",\"message\":\"Successfully pulled image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":1298,\"firstTimestamp\":\"2023-07-28T17:25:54Z\",\"lastTimestamp\":\"2023-07-31T00:27:37Z\",\"name\":\"Started\",\"message\":\"Started container\",\"type\":\"Normal\"}\n{\"count\":1297,\"firstTimestamp\":\"2023-07-28T17:26:44Z\",\"lastTimestamp\":\"2023-07-31T00:21:13Z\",\"name\":\"Killing\",\"message\":\"Killing container with id 5482815c3ff272c4a3101312775194659b1d870b5897b05a77db2bfacf1dad84.\",\"type\":\"Normal\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-28T18:39:42Z\",\"lastTimestamp\":\"2023-07-28T18:39:42Z\",\"name\":\"Failed\",\"message\":\"Error: Failed to start container my-service, Error response: to create containerd task: failed to create shim task: failed to mount container storage: failed to add LCOW layer: failed to add SCSI layer: failed to modify UVM with new SCSI mount: guest modify: bridge closed: unknown\",\"type\":\"Warning\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-31T00:20:44Z\",\"lastTimestamp\":\"2023-07-31T00:20:44Z\",\"name\":\"Pulling\",\"message\":\"pulling image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":1,\"firstTimestamp\":\"2023-07-31T00:23:45Z\",\"lastTimestamp\":\"2023-07-31T00:23:45Z\",\"name\":\"Pulled\",\"message\":\"Successfully pulled image \"edpcrmlmmtst01.azurecr.io/azureml/azureml_c13c3b33c86ce0068c2702b01479306f@sha256:1db40565b79b4865292315e67cda8be71c0ecf4ce75146f5f7e138e1dda4edf9\"\",\"type\":\"Normal\"}\n{\"count\":8,\"firstTimestamp\":\"2023-07-31T00:29:16Z\",\"lastTimestamp\":\"2023-07-31T00:40:18Z\",\"name\":\"Started\",\"message\":\"Started container\",\"type\":\"Normal\"}\n{\"count\":8,\"firstTimestamp\":\"2023-07-31T00:29:52Z\",\"lastTimestamp\":\"2023-07-31T00:40:41Z\",\"name\":\"Killing\",\"message\":\"Killing container with id 07f06af2a066a8959a0956c7b85a01b1b8144f23c208862ca65d612650341ea3.\",\"type\":\"Normal\"}\n\"\n    }\n  ]\n}"
+    }
+}
