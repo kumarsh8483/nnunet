@@ -1,0 +1,305 @@
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+Input In [53], in <cell line: 1>()
+----> 1 ml_client.online_deployments.begin_create_or_update((green_deployment).result())
+
+AttributeError: 'ManagedOnlineDeployment' object has no attribute 'result'
+/tmp/ipykernel_11132/2073413048.py:7: FutureWarning: azureml.core.model:
+To leverage new model deployment capabilities, AzureML recommends using CLI/SDK v2 to deploy models as online endpoint, 
+please refer to respective documentations 
+https://docs.microsoft.com/azure/machine-learning/how-to-deploy-managed-online-endpoints /
+https://docs.microsoft.com/azure/machine-learning/how-to-attach-kubernetes-anywhere 
+For more information on migration, see https://aka.ms/acimoemigration. 
+To disable CLI/SDK v1 deprecation warning set AZUREML_LOG_DEPRECATION_WARNING_ENABLED to 'False'
+  service = Model.deploy(
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+Input In [36], in <cell line: 7>()
+      4 aci_config = AciWebservice.deploy_configuration(cpu_cores = cpu_cores, memory_gb = memory_gb,location=location)
+      6 #Deloy the service
+----> 7 service = Model.deploy(
+      8         workspace=workspace,
+      9         name=service_name,
+     10         models=[registered_model],
+     11         inference_config=inference_config,
+     12         deployment_config=aci_config,
+     13         overwrite=True
+     14     )
+     15 service.wait_for_deployment(show_output=True)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/model.py:1688, in Model.deploy(workspace, name, models, inference_config, deployment_config, deployment_target, overwrite, show_output)
+   1685     use_env_path = inference_config.environment is not None
+   1687 if use_env_path:
+-> 1688     return Model._deploy_with_environment(workspace, name, models, inference_config, deployment_config,
+   1689                                           deployment_target, overwrite, show_output)
+   1691 # ContainerImage-based webservice.
+   1692 if deployment_config._webservice_type._webservice_type in \
+   1693    (MIR_WEBSERVICE_TYPE, AKS_ENDPOINT_TYPE):
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/model.py:1895, in Model._deploy_with_environment(workspace, name, models, inference_config, deployment_config, deployment_target, overwrite, show_output)
+   1871 """Deploy the model using an environment object.
+   1872 
+   1873 :param workspace:
+   (...)
+   1890 :rtype: azureml.core.Webservice
+   1891 """
+   1892 environment_image_request = \
+   1893     inference_config._build_environment_image_request(workspace, [model.id for model in models], show_output)
+-> 1895 return Model._deploy_with_environment_image_request(workspace, name, environment_image_request,
+   1896                                                     deployment_config, deployment_target, overwrite,
+   1897                                                     show_output)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/model.py:1945, in Model._deploy_with_environment_image_request(workspace, name, environment_image_request, deployment_config, deployment_target, overwrite, show_output)
+   1942 elif 'computeName' in webservice_payload and deployment_target is not None:
+   1943     webservice_payload['computeName'] = deployment_target.name
+-> 1945 return Webservice._deploy_webservice(workspace, name, webservice_payload, overwrite, webservice_class,
+   1946                                      show_output)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:827, in Webservice._deploy_webservice(workspace, name, webservice_payload, overwrite, webservice_class, show_output)
+    825 # TODO Remove check_for_existing_webservice() later, this check has already included in common validation.
+    826 Webservice.check_for_existing_webservice(workspace, name, overwrite)
+--> 827 Webservice._check_for_webservice(workspace, name, Webservice._get_deploy_compute_type(webservice_payload),
+    828                                  webservice_payload, SERVICE_REQUEST_OPERATION_CREATE)
+    830 if not overwrite:
+    831     Webservice._check_for_compute_resource(workspace, webservice_payload)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:744, in Webservice._check_for_webservice(workspace, name, compute_type, payload, action, request_func, check_func)
+    741     def check_func(content):
+    742         return Webservice._check_validate_error(content)
+--> 744 Webservice._run_validate_framework(request_func, check_func)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:628, in Webservice._run_validate_framework(request_func, check_func)
+    623 @staticmethod
+    624 def _run_validate_framework(request_func, check_func):
+    625     # a general validate framework for internal usage
+    626 
+    627     # request and get response content
+--> 628     content = request_func()
+    629     if not content:
+    630         return
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:738, in Webservice._check_for_webservice.<locals>.request_func()
+    737 def request_func():
+--> 738     return Webservice._request_validate_service(workspace, name, payload, action)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:605, in Webservice._request_validate_service(workspace, name, payload, action)
+    603 mms_endpoint = base_url + '/services/validate'
+    604 try:
+--> 605     resp = ClientBase._execute_func(get_requests_session().post, mms_endpoint,
+    606                                     params=params,
+    607                                     timeout=MMS_SERVICE_VALIDATE_OPERATION_TIMEOUT_SECONDS,
+    608                                     headers=headers,
+    609                                     json=Webservice._generate_common_validation_payload(name, payload, action))
+    610     resp.raise_for_status()
+    611 except requests.exceptions.RequestException:
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/_restclient/clientbase.py:374, in ClientBase._execute_func(cls, func, *args, **kwargs)
+    371 @classmethod
+    372 def _execute_func(cls, func, *args, **kwargs):
+    373     # reset the backoff from 32 seconds to 1 second
+--> 374     return cls._execute_func_internal(
+    375         DEFAULT_SHORT_BACKOFF, DEFAULT_RETRIES, module_logger, func, _noop_reset, *args, **kwargs)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/_restclient/clientbase.py:367, in ClientBase._execute_func_internal(cls, back_off, total_retry, logger, func, reset_func, *args, **kwargs)
+    365     return response
+    366 except Exception as error:
+--> 367     left_retry = cls._handle_retry(back_off, left_retry, total_retry, error, logger, func)
+    369 reset_func(*args, **kwargs)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/_restclient/clientbase.py:433, in ClientBase._handle_retry(cls, back_off, left_retry, total_retry, error, logger, func)
+    429         raise error
+    430 elif not isinstance(error, RETRY_EXCEPTIONS):
+    431     # the case 4 will be handled here by adding ConnectTime in the RETRY_EXCEPTIONS.
+    432     # also cover case 5
+--> 433     raise error
+    435 delay = cls._get_retry_delay(back_off, total_retry, left_retry, status_code)
+    437 left_retry -= 1
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/_restclient/clientbase.py:358, in ClientBase._execute_func_internal(cls, back_off, total_retry, logger, func, reset_func, *args, **kwargs)
+    356 try:
+    357     logger.debug("ClientBase: Calling {} with url {}".format(func_name, func_url))
+--> 358     response = func(*args, **kwargs)
+    359     if (isinstance(response, Response) and cls._is_retryable_status_code(response.status_code)
+    360             and left_retry > 0):
+    361         # This is the handle the error case 1. response.raise_for_status only throws HTTPError exception.
+    362         # if the status_code is retryable and it is not the last retry, then the exception is thrown.
+    363         # Otherwise, we will return the response directly.
+    364         response.raise_for_status()
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/requests/sessions.py:635, in Session.post(self, url, data, json, **kwargs)
+    624 def post(self, url, data=None, json=None, **kwargs):
+    625     r"""Sends a POST request. Returns :class:`Response` object.
+    626 
+    627     :param url: URL for the new :class:`Request` object.
+   (...)
+    632     :rtype: requests.Response
+    633     """
+--> 635     return self.request("POST", url, data=data, json=json, **kwargs)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/requests/sessions.py:573, in Session.request(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)
+    560 # Create the Request.
+    561 req = Request(
+    562     method=method.upper(),
+    563     url=url,
+   (...)
+    571     hooks=hooks,
+    572 )
+--> 573 prep = self.prepare_request(req)
+    575 proxies = proxies or {}
+    577 settings = self.merge_environment_settings(
+    578     prep.url, proxies, stream, verify, cert
+    579 )
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/requests/sessions.py:484, in Session.prepare_request(self, request)
+    481     auth = get_netrc_auth(request.url)
+    483 p = PreparedRequest()
+--> 484 p.prepare(
+    485     method=request.method.upper(),
+    486     url=request.url,
+    487     files=request.files,
+    488     data=request.data,
+    489     json=request.json,
+    490     headers=merge_setting(
+    491         request.headers, self.headers, dict_class=CaseInsensitiveDict
+    492     ),
+    493     params=merge_setting(request.params, self.params),
+    494     auth=merge_setting(auth, self.auth),
+    495     cookies=merged_cookies,
+    496     hooks=merge_hooks(request.hooks, self.hooks),
+    497 )
+    498 return p
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/requests/models.py:371, in PreparedRequest.prepare(self, method, url, headers, files, data, params, auth, cookies, hooks, json)
+    369 self.prepare_headers(headers)
+    370 self.prepare_cookies(cookies)
+--> 371 self.prepare_body(data, files, json)
+    372 self.prepare_auth(auth, url)
+    374 # Note that prepare_auth must be last to enable authentication schemes
+    375 # such as OAuth to work on a fully prepared request.
+    376 
+    377 # This MUST go after prepare_auth. Authenticators could add a hook
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/requests/models.py:511, in PreparedRequest.prepare_body(self, data, files, json)
+    508 content_type = "application/json"
+    510 try:
+--> 511     body = complexjson.dumps(json, allow_nan=False)
+    512 except ValueError as ve:
+    513     raise InvalidJSONError(ve, request=self)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/json/__init__.py:238, in dumps(obj, skipkeys, ensure_ascii, check_circular, allow_nan, cls, indent, separators, default, sort_keys, **kw)
+    232 if cls is None:
+    233     cls = JSONEncoder
+    234 return cls(
+    235     skipkeys=skipkeys, ensure_ascii=ensure_ascii,
+    236     check_circular=check_circular, allow_nan=allow_nan, indent=indent,
+    237     separators=separators, default=default, sort_keys=sort_keys,
+--> 238     **kw).encode(obj)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/json/encoder.py:199, in JSONEncoder.encode(self, o)
+    195         return encode_basestring(o)
+    196 # This doesn't pass the iterator directly to ''.join() because the
+    197 # exceptions aren't as detailed.  The list call should be roughly
+    198 # equivalent to the PySequence_Fast that ''.join() would do.
+--> 199 chunks = self.iterencode(o, _one_shot=True)
+    200 if not isinstance(chunks, (list, tuple)):
+    201     chunks = list(chunks)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/json/encoder.py:257, in JSONEncoder.iterencode(self, o, _one_shot)
+    252 else:
+    253     _iterencode = _make_iterencode(
+    254         markers, self.default, _encoder, self.indent, floatstr,
+    255         self.key_separator, self.item_separator, self.sort_keys,
+    256         self.skipkeys, _one_shot)
+--> 257 return _iterencode(o, 0)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/json/encoder.py:179, in JSONEncoder.default(self, o)
+    160 def default(self, o):
+    161     """Implement this method in a subclass such that it returns
+    162     a serializable object for ``o``, or calls the base implementation
+    163     (to raise a ``TypeError``).
+   (...)
+    177 
+    178     """
+--> 179     raise TypeError(f'Object of type {o.__class__.__name__} '
+    180                     f'is not JSON serializable')
+
+TypeError: Object of type Environment is not JSON serializable
+/tmp/ipykernel_11132/98735313.py:7: FutureWarning: azureml.core.model:
+To leverage new model deployment capabilities, AzureML recommends using CLI/SDK v2 to deploy models as online endpoint, 
+please refer to respective documentations 
+https://docs.microsoft.com/azure/machine-learning/how-to-deploy-managed-online-endpoints /
+https://docs.microsoft.com/azure/machine-learning/how-to-attach-kubernetes-anywhere 
+For more information on migration, see https://aka.ms/acimoemigration. 
+To disable CLI/SDK v1 deprecation warning set AZUREML_LOG_DEPRECATION_WARNING_ENABLED to 'False'
+  service = Model.deploy(ws, aci_service_name,[registered_model], inference_config, deployment_config, overwrite=True)
+Service deployment polling reached non-successful terminal state, current service state: Unhealthy
+Operation ID: f52ff4a2-14ce-4247-b0aa-3eede03a26bc
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details."
+    }
+  ]
+}
+
+Tips: You can try get_logs(): https://aka.ms/debugimage#dockerlog or local deployment: https://aka.ms/debugimage#debug-locally to debug if deployment takes longer than 10 minutes.
+Running
+2023-08-01 18:40:15+00:00 Creating Container Registry if not exists.
+2023-08-01 18:40:15+00:00 Registering the environment.
+2023-08-01 18:40:17+00:00 Building image..
+2023-08-01 18:50:31+00:00 Generating deployment configuration..
+2023-08-01 18:50:40+00:00 Submitting deployment to compute.
+2023-08-01 18:50:43+00:00 Checking the status of deployment nnunet-service..
+2023-08-01 18:52:37+00:00 Checking the status of inference endpoint nnunet-service.
+Failed
+---------------------------------------------------------------------------
+WebserviceException                       Traceback (most recent call last)
+Input In [39], in <cell line: 8>()
+      5 deployment_config = AciWebservice.deploy_configuration(cpu_cores=1,memory_gb=1)
+      7 service = Model.deploy(ws, aci_service_name,[registered_model], inference_config, deployment_config, overwrite=True)
+----> 8 service.wait_for_deployment(True)
+     10 print(service.state)
+
+File /anaconda/envs/azureml_py310_sdkv2/lib/python3.10/site-packages/azureml/core/webservice/webservice.py:918, in Webservice.wait_for_deployment(self, show_output, timeout_sec)
+    915         if not logs_response:
+    916             logs_response = 'Current sub-operation type not known, more logs unavailable.'
+--> 918         raise WebserviceException('Service deployment polling reached non-successful terminal state, current '
+    919                                   'service state: {}\n'
+    920                                   'Operation ID: {}\n'
+    921                                   '{}\n'
+    922                                   'Error:\n'
+    923                                   '{}'.format(self.state, self._operation_endpoint.split('/')[-1],
+    924                                               logs_response, format_error_response), logger=module_logger)
+    925     print('{} service creation operation finished, operation "{}"'.format(self._webservice_type,
+    926                                                                           operation_state))
+    927 except WebserviceException as e:
+
+WebserviceException: WebserviceException:
+	Message: Service deployment polling reached non-successful terminal state, current service state: Unhealthy
+Operation ID: f52ff4a2-14ce-4247-b0aa-3eede03a26bc
+More information can be found using '.get_logs()'
+Error:
+{
+  "code": "AciDeploymentFailed",
+  "statusCode": 400,
+  "message": "Aci Deployment failed with exception: Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details.",
+  "details": [
+    {
+      "code": "CrashLoopBackOff",
+      "message": "Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details."
+    }
+  ]
+}
+	InnerException None
+	ErrorResponse 
+{
+    "error": {
+        "message": "Service deployment polling reached non-successful terminal state, current service state: Unhealthy\nOperation ID: f52ff4a2-14ce-4247-b0aa-3eede03a26bc\nMore information can be found using '.get_logs()'\nError:\n{\n  \"code\": \"AciDeploymentFailed\",\n  \"statusCode\": 400,\n  \"message\": \"Aci Deployment failed with exception: Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details.\",\n  \"details\": [\n    {\n      \"code\": \"CrashLoopBackOff\",\n      \"message\": \"Error in entry script, ModuleNotFoundError: No module named 'nnunet', please run print(service.get_logs()) to get details.\"\n    }\n  ]\n}"
+    }
+}
