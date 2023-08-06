@@ -1,0 +1,20 @@
+FROM 	mcr.microsoft.com/azureml/minimal-ubuntu20.04-py38-cpu-inference:latest
+
+WORKDIR /app
+USER root
+
+RUN chmod -R 777 /app
+COPY score_inf.py /app
+COPY requirement.txt /app
+#RUN chmod -R 777 /var/
+
+# Install the required Python packages
+RUN pip install --no-cache-dir -r requirement.txt
+
+#RUN pip install --upgrade azure-core
+##RUN pip install azureml-inference-server-http
+#RUN pip install azureml-defaults
+
+
+# Define the command to run your inference script
+CMD ["python", "score_inf.py"]
