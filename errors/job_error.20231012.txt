@@ -1,0 +1,15 @@
+2023-10-12T13:31:11.821099 This file shows errors in loading, calling init() and calling run() of the entry script. An error here may not impact the job result. Please check "job_result.txt" for the job result.
+2023-10-12T13:31:22.329775 The process002 on node 0 failed on mini batch 0 with error: Traceback (most recent call last):
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/payload_thread.py", line 296, in process_task
+    self.process_mini_batch(task)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/payload_thread.py", line 123, in process_mini_batch
+    score_output = processor.process_mini_batch(*args)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/task_processor.py", line 254, in process_mini_batch
+    self.validate(score_output)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/task_processor.py", line 57, in validate
+    raise exc
+azureml_common.parallel_run.exception.WrongTypeFromRunException: The run() method in the entry script should return a list or a pandas DataFrame. The length of returned result is considered as succeeded number of items. For --output_action=append_row, the returned result is what to write into the result file. The actual type of output is NoneType.
+Please check logs for error. You can check logs/readme.txt for the layout of logs.
+
+2023-10-12T13:31:32.390668 The job error logger stops for the job is done.
+2023-10-12T13:31:32.390774 The job error logger on node 0 stopped.

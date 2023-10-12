@@ -1,0 +1,21 @@
+Failed.
+Entry script error. The number of failed items is 2982, which exceeds error threshold 10.
+The run() function in the entry script had raised exception for 3 times. Please check logs at logs/user/error/* for details.
+  * Error 'The run() method in the entry script should return a list or a pandas DataFrame. The length of returned result is considered as succeeded number of items. For --output_action=append_row, the returned result is what to write into the result file. The actual type of output is NoneType.
+Please check logs for error. You can check logs/readme.txt for the layout of logs.' occurred 3 times.
+2023-10-12T13:31:43.440384: from node 0.
+
+Error 'WrongTypeFromRunException' occurred 3 times. Traceback (most recent call last):
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/payload_thread.py", line 296, in process_task
+    self.process_mini_batch(task)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/payload_thread.py", line 123, in process_mini_batch
+    score_output = processor.process_mini_batch(*args)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/task_processor.py", line 254, in process_mini_batch
+    self.validate(score_output)
+  File "/mnt/azureml/cr/j/87166701d4de4a7294093c35cba853d0/exe/wd/driver/azureml_user/parallel_run/task_processor.py", line 57, in validate
+    raise exc
+azureml_common.parallel_run.exception.WrongTypeFromRunException: The run() method in the entry script should return a list or a pandas DataFrame. The length of returned result is considered as succeeded number of items. For --output_action=append_row, the returned result is what to write into the result file. The actual type of output is NoneType.
+Please check logs for error. You can check logs/readme.txt for the layout of logs.
+
+There are None mini batches. 0 succeeded, 1 failed, 0 pending.
+The remained 1 mini batches(include failed and pending mini batches) can be rerun in next job with --resume_from cbb76165-f678-438b-86a0-c89087f2826c passed in job arguments.
